@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>2015 Production-Based Index (2015 AMI rank)</h2>
+
+<p id="demo"></p>
+
+ 
+
+<form id="userInput" action="car.html" method="get">
+Model:<br>
+<input list="Makes" name="carlines">
+<datalist id="carlines">
+  <option value="Toyota Camry">
+  <option value="Buick">
+  <option value="Chevrolet">
+  <option value="GMC">
+  <option value="Ford">
+</datalist><br>
+<input type="submit">
+</form>
+
+
+<script src= "car.js">
+var input = document.getElementById('userInput').value;
+console.log(input);
+//var text = require('car.json');
+
+//var obj = JSON.parse(text);
+
+//var search=function(model){
+console.log(data.cars)
+for (i=0;i < data.cars.length;i++)
+{
+	if (data.cars[i].model.equals(input.toString()) ) {
+		document.getElementById("input").innerHTML =
+			obj.cars[i].model + " " +
+			obj.cars[i].rank+ " " +
+			obj.cars[i].rate;
+
+	}
+
+}
+//}
+//search(input);
+
+</script>
+
+</body>
+
+</html>
+
+
