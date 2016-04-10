@@ -3,6 +3,7 @@
 						"Percent Content United States/Canada":"75%United States",
 						"Percent Content Other Countries":"15%Japan,10%Other",
 						"Engine/Motor":"United States",
+						"Engine/Moto-loc":"37.6,-95.665",
 						"Bumper - Body":"Unknown",
 						"Alternator - Charging":"Unknown",
 						"Distributor - Ignition":"Unknown",
@@ -12,7 +13,9 @@
 						"Muffler - Exhaust":"Unknown",
 						"Oil Filter - Engine oil":"Unknown",
 						"Carburetor - Fuel Supply":"Unknown",
-						"Gearbox - Transmission":"United States,Japan"},
+						"Gearbox - Transmission":"United States,Japan",
+						"Gearbox-loc_1":"37.6,-95.665",
+						"Gearbox-loc_2":"34.7857323,134.3756902"},
 
 {"model":"Toyota Sienna","2015 rank":"2nd",
 						 "Percent Content United States/Canada":"75%United States",
