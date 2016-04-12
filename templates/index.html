@@ -18,7 +18,7 @@ Model: <input type="text" name="model">
 </p>
 
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDFY0jZb_CTePH4uVluwaVjO0dqxSSNI4A"></script>
-<h2>{{Model}} FootPrint</h2>
+<h2>{{Model2}} FootPrint</h2>
 
 <div id="googleMap" style="width:500px;height:380px;"></div>
 </body>
@@ -42,9 +42,10 @@ function initialize()
 	  });
 
 	  var location_1 =  "{{Plant_1_location}}";
+	  var info_1 = "{{Plant_1_info}}";
 
 	 var content1 = '<div id="plant1">' +
-	                  '<div class="plant1_company">Spring Hill Manufacturing</div>' +'<div class="split">Location:</div>'+
+	                  '<div class="plant1_company">' +  info_1 + '</div>' +'<div class="split">Location:</div>'+
 	                  '<div class="plant1_location">' + location_1 + '</div>' + '</div>';
 	  marker1.setMap(map);
 	  var infowindow1 = new google.maps.InfoWindow({
@@ -63,9 +64,10 @@ function initialize()
 	  });
 
 	  var location_2 =  "{{Plant_2_location}}";
+	  var info_2 = "{{Plant_2_info}}";
 
 	 var content2 = '<div id="plant1">' +
-	                  '<div class="plant1_company">Spring Hill Manufacturing</div>' +'<div class="split">Location:</div>'+
+	                  '<div class="plant1_company">' + info_2 + '</div>' +'<div class="split">Location:</div>'+
 	                  '<div class="plant1_location">' + location_2 + '</div>' + '</div>';
 	  marker2.setMap(map);
 	  var infowindow2 = new google.maps.InfoWindow({
@@ -84,9 +86,10 @@ function initialize()
 	  });
 
 	  var location_3 =  "{{Plant_3_location}}";
+	  var info_3 = "{{Plant_3_info}}";
 
 	 var content3 = '<div id="plant1">' +
-	                  '<div class="plant1_company">Spring Hill Manufacturing</div>' +'<div class="split">Location:</div>'+
+	                  '<div class="plant1_company">' + info_3 + '</div>' +'<div class="split">Location:</div>'+
 	                  '<div class="plant1_location">' + location_3 + '</div>' + '</div>';
 	  marker3.setMap(map);
 	  var infowindow3 = new google.maps.InfoWindow({
@@ -105,9 +108,10 @@ function initialize()
 	  });
 
 	  var location_4 =  "{{Plant_4_location}}";
+	  var info_4 = "{{Plant_4_info}}";
 
 	 var content4 = '<div id="plant1">' +
-	                  '<div class="plant1_company">Spring Hill Manufacturing</div>' +'<div class="split">Location:</div>'+
+	                  '<div class="plant1_company">' + info_4 + '</div>' +'<div class="split">Location:</div>'+
 	                  '<div class="plant1_location">' + location_4 + '</div>' + '</div>';
 	  marker4.setMap(map);
 	  var infowindow4 = new google.maps.InfoWindow({
@@ -126,9 +130,10 @@ function initialize()
 	  });
 
 	  var location_5 =  "{{Plant_5_location}}";
+	  var info_5 = "{{Plant_5_info}}";
 
 	 var content5 = '<div id="plant1">' +
-	                  '<div class="plant1_company">Spring Hill Manufacturing</div>' +'<div class="split">Location:</div>'+
+	                  '<div class="plant1_company">' + info_5 + '</div>' +'<div class="split">Location:</div>'+
 	                  '<div class="plant1_location">' + location_5 + '</div>' + '</div>';
 	  marker5.setMap(map);
 	  var infowindow5 = new google.maps.InfoWindow({

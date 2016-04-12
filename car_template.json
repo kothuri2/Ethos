@@ -1,5 +1,5 @@
 [{
-"Toyota Camry" : {//done
+"Toyota Camry" : {
                         "2015 rank":"1st",
                         "Plant_1_location":"Lafayette, IN",
                         "Plant_1_latlong":"40.3773138,-86.7990629",
@@ -19,7 +19,7 @@
 },
 
 {
-"Chevrolot Corvette" : {//done
+"Chevrolot Corvette" : {
                         "2015 rank":"2nd",
                         "Plant_1_location":"Bowling Green, Kentucky",
                         "Plant_1_latlong":"37.009,86.373",
@@ -38,7 +38,7 @@
                         "Plant_5_info":"Port Melbourne: V6 engine"}
 },
 {
-"Chevrolot Traverse" : {//done
+"Chevrolot Traverse" : {
                         "2015 rank":"3rd",
                         "Plant_1_location":"Spring Hill, Tennessee, US",
                         "Plant_1_latlong":"35.743,86.957",
@@ -57,7 +57,7 @@
                         "Plant_5_info":"Pontiac Metal Center: Stamping"}
 },
 {
-"Buick Enclave" : {//done
+"Buick Enclave" : {
                         "2015 rank":"6th",
                         "Plant_1_location":"Warren, Michigan, US",
                         "Plant_1_latlong":"42.462,-83",

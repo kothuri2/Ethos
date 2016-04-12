@@ -13,6 +13,26 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 app.get('/', function (req, res) {
    res.sendFile( __dirname + "/templates/" + "index.html" );
+   var html = mustache.to_html(template["index.html"], 
+    {Model: "", Rank: "",
+    Model2: "Car Model",
+     Plant_1_location: "",
+     Plant_1_latlong: "" ,
+     Plant_1_info: "" ,
+     Plant_2_location: "",
+     Plant_2_latlong: "",
+     Plant_2_info: "",
+     Plant_3_location: "",
+     Plant_3_latlong: "",
+     Plant_3_info: "",
+     Plant_4_location: "",
+     Plant_4_latlong: "",
+     Plant_4_info: "",
+     Plant_5_location: "",
+     Plant_5_latlong: "",
+     Plant_5_info: "",
+   });
+   res.send(html);
 })
 
 app.post('/process_post', urlencodedParser, function (req, res) {
@@ -34,7 +54,7 @@ app.post('/process_post', urlencodedParser, function (req, res) {
 
    //Returns this car model's data
    var html = mustache.to_html(template["index.html"], 
-    {Model: model.toString(), Rank: response[model.toString()]["2015 rank"],
+    {Model: model.toString(), Model2: model.toString(), Rank: response[model.toString()]["2015 rank"],
      Plant_1_location: response[model.toString()]["Plant_1_location"],
      Plant_1_latlong: response[model.toString()]["Plant_1_latlong"],
      Plant_1_info: response[model.toString()]["Plant_1_info"],
