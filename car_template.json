@@ -2,40 +2,41 @@
 "Toyota Camry" : {
 						"2015 rank":"1st",
 						"Plant_1_location":"Georgetown, Kentucky",
-						"Plant_1_latlong":"35.743,86.957",
+						"Plant_1_latlong":"60.743,90.957",
 						"Plant_1_info":"",
 						"Plant_2_location":"Georgetown, Kentucky",
-						"Plant_2_latlong":"35.743,86.957",
+						"Plant_2_latlong":"100.743,70.957",
 						"Plant_2_info":"",
 						"Plant_3_location":"Georgetown, Kentucky",
-						"Plant_3_latlong":"35.743,86.957",
+						"Plant_3_latlong":"10.743,20.957",
 						"Plant_3_info":"",
 						"Plant_4_location":"Georgetown, Kentucky",
-						"Plant_4_latlong":"35.743,86.957",
+						"Plant_4_latlong":"130.743,70.957",
 						"Plant_5_info":"",
 						"Plant_5_location":"Georgetown, Kentucky",
-						"Plant_5_latlong":"35.743,86.957",
-						"Plant_5_info":"",
-						}
+						"Plant_5_latlong":"120.743,36.957",
+						"Plant_5_info":""
+				 }
 },
 
 {
-"Cheverlot Corvette" : {
-						"2015 rank":"2nd",
-						"Plant_1_location":"",
-						"Plant_1_latlong":"",
-						"Plant_1_info":"",
-						"Plant_2_location":"",
-						"Plant_2_latlong":"",
-						"Plant_2_info":"",
-						"Plant_3_location":"",
-						"Plant_3_latlong":"",
-						"Plant_3_info":"",
-						"Plant_4_location":"",
-						"Plant_4_latlong":"",
-						"Plant_5_info":"",
-						"Plant_5_location":"",
-						"Plant_5_latlong":"",
-						"Plant_5_info":"",
-						}
-}]
+    "Chevrolet Corvette":{
+    					  "2015 rank": "3rd",
+	                      "Plant_1_location":"Bowling Green, Kentucky",
+	                      "Plant_1_latlong":"37.009,86.373",
+	                      "Plant_1_info":"Bowling Green Assembly Plant",
+	                      "Plant_2_location":"Kokomo, Indiana, US",
+	                      "Plant_2_latlong":"40.455,-86.109",
+	                      "Plant_2_info":"Kokomo Operations: Electronic Assembly,Transmission",
+	                      "Plant_3_location":"Lockport ,New York, US",
+	                      "Plant_3_latlong":"43.169,-78.732",
+	                      "Plant_3_info":"Lockport Components: Radiators, Condensers, Evaporators, Oil Coolers",
+	                      "Plant_4_location":"Pontiac, Michigan, US",
+	                      "Plant_4_latlong":"42.466,-83.291",
+	                      "Plant_4_info":"Pontiac Metal Center: Stamping",
+	                      "Plant_5_location":"somewhere",
+	                      "Plant_5_latlong":"10.466, -83.291",
+	                      "Plant_5_info":"blabla"
+                        }
+
+} ]

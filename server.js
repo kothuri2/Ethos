@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var fs = require('fs');
-var obj = require('./car2.json');
+var obj = require('./car_template.json');
 var template = require('./template.js');
 var mustache = require('mustache');
 
@@ -31,12 +31,26 @@ app.post('/process_post', urlencodedParser, function (req, res) {
       }
    }
    //console.log(response[model.toString()]);
-   
+
    //Returns this car model's data
    var html = mustache.to_html(template["index.html"], 
     {Model: model.toString(), Rank: response[model.toString()]["2015 rank"],
      Plant_1_location: response[model.toString()]["Plant_1_location"],
-     Plant_1_latlong: response[model.toString()]["Plant_1_latlong"]});
+     Plant_1_latlong: response[model.toString()]["Plant_1_latlong"],
+     Plant_1_info: response[model.toString()]["Plant_1_info"],
+     Plant_2_location: response[model.toString()]["Plant_2_location"],
+     Plant_2_latlong: response[model.toString()]["Plant_2_latlong"],
+     Plant_2_info: response[model.toString()]["Plant_2_info"],
+     Plant_3_location: response[model.toString()]["Plant_3_location"],
+     Plant_3_latlong: response[model.toString()]["Plant_3_latlong"],
+     Plant_3_info: response[model.toString()]["Plant_3_info"],
+     Plant_4_location: response[model.toString()]["Plant_4_location"],
+     Plant_4_latlong: response[model.toString()]["Plant_4_latlong"],
+     Plant_4_info: response[model.toString()]["Plant_4_info"],
+     Plant_5_location: response[model.toString()]["Plant_5_location"],
+     Plant_5_latlong: response[model.toString()]["Plant_5_latlong"],
+     Plant_5_info: response[model.toString()]["Plant_5_info"],
+   });
    res.send(html);
    //console.log(response[model.toString()]["2015 rank"]);
    //res.end(JSON.stringify(response));
