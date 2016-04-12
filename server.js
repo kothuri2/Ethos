@@ -31,6 +31,8 @@ app.post('/process_post', urlencodedParser, function (req, res) {
       }
    }
    //console.log(response[model.toString()]);
+   
+   //Returns this car model's data
    var html = mustache.to_html(template["index.html"], 
     {Model: model.toString(), Rank: response[model.toString()]["2015 rank"],
      Plant_1_location: response[model.toString()]["Plant_1_location"],

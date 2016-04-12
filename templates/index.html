@@ -37,9 +37,11 @@ function initialize()
 	  animation:google.maps.Animation.BOUNCE
 	  });
 
+	  var location_1 =  "{{Plant_1_location}}";
+
 	 var content1 = '<div id="plant1">' +
 	                  '<div class="plant1_company">Spring Hill Manufacturing</div>' +'<div class="split">Location:</div>'+
-	                  '<div class="plant1_location">' + {{Plant_1_location}} + '</div>' + '</div>';
+	                  '<div class="plant1_location">' + location_1 + '</div>' + '</div>';
 	  marker1.setMap(map);
 	  var infowindow1 = new google.maps.InfoWindow({
 	  content:content1
