@@ -1,0 +1,20 @@
+{
+  "name": "ethos",
+  "version": "1.0.0",
+  "description": "Visualization tool",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kothuri2/Ethos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kothuri2/Ethos/issues"
+  },
+  "homepage": "https://github.com/kothuri2/Ethos#readme"
+}
