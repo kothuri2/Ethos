@@ -9,9 +9,6 @@ Model: <input type="text" name="model">
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDFY0jZb_CTePH4uVluwaVjO0dqxSSNI4A"></script>
 <h2>Chevrolet Traverse</h2>
 <script>
-
-
-
 function initialize() {
 
   var mapProp = {
@@ -20,8 +17,8 @@ function initialize() {
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-//marker1
-var myCenter1=new google.maps.LatLng(35.743,86.957);
+  //marker1
+  var myCenter1=new google.maps.LatLng(35.743,86.957);
   var marker1=new google.maps.Marker({
   position:myCenter1,
   animation:google.maps.Animation.BOUNCE

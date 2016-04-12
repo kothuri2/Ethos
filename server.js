@@ -3,6 +3,8 @@ var app = express();
 var bodyParser = require('body-parser');
 var fs = require('fs');
 var obj = require('./car2.json');
+var template = require('./template.js');
+var mustache = require('mustache');
 
 // Create application/x-www-form-urlencoded parser
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
@@ -10,7 +12,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 //app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-   res.sendFile( __dirname + "/" + "index.html" );
+   res.sendFile( __dirname + "/templates/" + "index.html" );
 })
 
 app.post('/process_post', urlencodedParser, function (req, res) {
@@ -28,8 +30,14 @@ app.post('/process_post', urlencodedParser, function (req, res) {
          response = obj[key];
       }
    }
-   //console.log(response);
-   res.end(JSON.stringify(response));
+   //console.log(response[model.toString()]);
+   var html = mustache.to_html(template["index.html"], 
+    {Model: model.toString(), Rank: response[model.toString()]["2015 rank"],
+     Plant_1_location: response[model.toString()]["Plant_1_location"],
+     Plant_1_latlong: response[model.toString()]["Plant_1_latlong"]});
+   res.send(html);
+   //console.log(response[model.toString()]["2015 rank"]);
+   //res.end(JSON.stringify(response));
 })
 
 var server = app.listen(8081, function () {

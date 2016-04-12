@@ -1,0 +1,56 @@
+<html>
+<body>
+<form action="http://127.0.0.1:8081/process_post" method="POST">
+Model: <input type="text" name="model">
+<input type="submit" value="Submit">
+</form>
+
+<p>
+	<ul>
+		<li>Car Model: {{Model}}</li>
+		<li>2015 Rank: {{Rank}}</li>
+		<li>Plant 1 Location: {{Plant_1_location}}</li>
+	</ul>
+</p>
+
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDFY0jZb_CTePH4uVluwaVjO0dqxSSNI4A"></script>
+<h2>{{Model}} FootPrint</h2>
+
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+
+<script>
+
+function initialize()
+{
+	var mapProp = {
+	    center:new google.maps.LatLng(34.7857323,134.3756902),  
+	    zoom:1,
+	    mapTypeId:google.maps.MapTypeId.ROADMAP
+  	};
+  	var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+  	  //marker1
+	  var myCenter1=new google.maps.LatLng({{Plant_1_latlong}});
+	  var marker1=new google.maps.Marker({
+	  position:myCenter1,
+	  animation:google.maps.Animation.BOUNCE
+	  });
+
+	 var content1 = '<div id="plant1">' +
+	                  '<div class="plant1_company">Spring Hill Manufacturing</div>' +'<div class="split">Location:</div>'+
+	                  '<div class="plant1_location">' + {{Plant_1_location}} + '</div>' + '</div>';
+	  marker1.setMap(map);
+	  var infowindow1 = new google.maps.InfoWindow({
+	  content:content1
+	  });
+
+	  google.maps.event.addListener(marker1, 'click', function() {
+	  infowindow1.open(map,marker1);
+	  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+
+</html>
