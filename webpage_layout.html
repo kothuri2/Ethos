@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ethos Globe</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div style="color: rgb(255, 255, 255); font: 13px/20px Arial,sans-serif; cursor: auto;" id="container"><canvas style="width: 629px; height: 595px; position: absolute;" height="892" width="943"></canvas></div>
+
+  <div id="info">
+    Made by <a href="//jtp.io">Ethos Team</a> <span class="bull">•</span>
+    Source code on <a href="//github.com/jtpio/music-globe">Github</a> <span class="bull">•</span>
+    Powered by <a href="//www.chromeexperiments.com/globe">WebGL Globe</a> <span class="bull">•</span>
+    Data from <a href="//www.bandsintown.com/api/overview"> Backgroung Search </a> and <a href="//musicbrainz.org/doc/Development/XML_Web_Service/Version_2/Search"> Statistic Inference </a>
+  </div>
+
+  <div style="display: block;" id="description">
+    <p>
+      Car manufacturing locations, visualized on a globe. <br>
+      The higher a bar is, the bigger scale of the factory is at that location.
+    </p>
+  </div>
+
+  <button id="tray" type="button" class="btn btn-default btn-xs">
+    <span class="glyphicon glyphicon-th-list"></span>
+  </button>
+
+  <div style="display: block;" id="title">
+    <div class="input-group">
+      <input id="artistName" placeholder="Type your car in" class="form-control" type="text">
+      <div class="input-group-btn">
+        <button id="searchBtn" class="btn btn-primary" type="button">Search</button>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+        <ul class="dropdown-menu pull-right">
+          <li><a href="#raw">Search on Toyota Carmy by name</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="cbs">
+      <label class="checkbox-inline">
+        <input disabled="disabled" id="past" checked="" type="checkbox"> Abandoned
+      </label>
+      <label class="checkbox-inline">
+        <input disabled="disabled" id="upcoming" checked="" type="checkbox"> Operation
+      </label>
+    </div>
+
+    <div id="error" class="alert alert-danger"></div>
+
+    <div id="infos">
+      <h2 id="artist"></h2>
+      <ul style="display: none;" id="top10" class="list-group"></ul>
+    </div>
+
+    <div id="artists" class="list-group"><div>
+
+  </div>
+
+  <script type="text/javascript" src="lib/Detector.js"></script>
+  <script type="text/javascript" src="lib/three.min.js"></script>
+  <script type="text/javascript" src="lib/Tween.js"></script>
+  <script type="text/javascript" src="lib/jquery-2.1.0.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="globe.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+
+
+
+</div></div></body>
+</html>
