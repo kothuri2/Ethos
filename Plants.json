@@ -1,0 +1,127 @@
+[{
+"Toyota Camry" : {
+                      "Plant_1" : {
+                             "Name":"Fuji Heavy Industries - SIA Assembly",
+                             "Location":"Lafayette, IN",
+                             "LatLong":"40.3773138,-86.7990629",
+                             "Environment_Rating" : 
+                             "Num_Employees" :
+                             "Size" : 
+                        }
+                        
+                        "Plant_2" : {
+                        "Plant_2_location":"Georgetown, KY",
+                        "Plant_2_latlong":"38.2610322,-84.5317628",
+                        "Plant_2_info":"Toyota Group - TMMK Complex",
+                        }
+                        
+                        "Plant_3" : {
+                        "Plant_3_location":"Toyota, Aichi, JP",
+                        "Plant_3_latlong":"35.1408902,137.3108723",
+                        "Plant_3_info":"Tsutsumi",
+                        }
+                        
+                        "Plant_4" : {
+                        "Plant_4_location":"Buffalo, WV",
+                        "Plant_4_latlong":"38.6074615,-81.9813594",
+                        "Plant_4_info":"Toyota Motor Manufacturing West Virginia, Inc.:Engine",
+                        }
+                        
+                        "Plant_5" : {
+                        "Plant_5_location":"Taiwa, Miyagi, JP",
+                        "Plant_5_latlong":"38.4217614,140.8042707",
+                        "Plant_5_info":"Toyota Motor East Japan, Inc.-Miyagi Taiwa: brake, coverters,actuators"
+                        }
+                        
+}
+
+{
+"Chevrolot Corvette" : {
+                          "Plant_1" : {
+                             "Name":"Bowling Green Assembly Plant",
+                             "Location":"Bowling Green, Kentucky",
+                             "LatLong":"37.009,86.373",
+                             "Environment_Rating" : 
+                             "Num_Employees" :"918",
+                             "Fact_Size" : "1000000 sq feet",
+                             "Land_Size" : "212 acres",
+                          }
+                          
+                           "Plant_2" : {
+                             "Name":"Kokomo Operations: Electronic Assembly,Transmission",
+                             "Location":"Kokomo, Indiana, US",
+                             "LatLong":"40.455,-86.109",
+                             "Environment_Rating" : 
+                             "Num_Employees" : "1013",
+                             "Fact_size" : "2600000 sq feet",
+                             "Land_Size" : "272 acres",
+                        }
+                        
+                         "Plant_3" : {
+                             "Name":"Lockport Components: Radiators, Condensers, Evaporators, Oil Coolers",
+                             "Location":"Lockport ,New York, US",
+                             "LatLong":"43.169,-78.732",
+                             "Environment_Rating" : 
+                             "Num_Employees" :"1587",
+                             "Fact_Size" : "2600000 sq feet",
+                             "Land_Size" : "495 acres",
+                        }
+                        
+                        "Plant_4" : {
+                             "Name":"Pontiac Metal Center: Stamping",
+                             "Location":"Pontiac, Michigan, US",
+                             "LatLong":"42.466,-83.291",
+                             "Environment_Rating" : 
+                             "Num_Employees" : "491",
+                             "Fact_Size" : "1250000 sq feet",
+                             "Land_Size" :
+                        }
+                        "Plant_5" : {
+                             "Name":"Port Melbourne: V6 engine"
+                             "Location":"Fishermans Bend, Victoria, South Australia",
+                             "LatLong":
+                             "Environment_Rating" : 
+                             "Num_Employees" :
+                             "Size" : 
+                        }
+
+},
+{
+"Chevrolot Traverse" : {
+                        "2015 rank":"3rd",
+                        "Plant_1_location":"Spring Hill, Tennessee, US",
+                        "Plant_1_latlong":"35.743,86.957",
+                        "Plant_1_info":"Spring Hill Manufacturing",
+                        "Plant_2_location":"Moraine, Ohio, US",
+                        "Plant_2_latlong":"46.909,-96.808",
+                        "Plant_2_info":"Delco Moraine NDH, brake pad",
+                        "Plant_3_location":"Anderson, Indiana, US",
+                        "Plant_3_latlong":"40.047,-85.721",
+                        "Plant_3_info":"Delco Remy, Ignition, Batteries",
+                        "Plant_4_location":"Warren, Michigan, US",
+                        "Plant_4_latlong":"42.462,-83",
+                        "Plant_4_info":"Warren Transmission: Transmission",
+                        "Plant_5_location":"Pontiac, Michigan, US",
+                        "Plant_5_latlong":"42.466,-83.291",
+                        "Plant_5_info":"Pontiac Metal Center: Stamping"}
+},
+{
+"Buick Enclave" : {
+                        "2015 rank":"6th",
+                        "Plant_1_location":"Warren, Michigan, US",
+                        "Plant_1_latlong":"42.462,-83",
+                        "Plant_1_info":"Warren Transmission: Transmission",
+                        "Plant_2_location":"Pontiac, Michigan, US",
+                        "Plant_2_latlong":"42.466,-83.291",
+                        "Plant_2_info":"Pontiac Metal Center: Stamping",
+                        "Plant_3_location":"Delta Township, Michigan, US",
+                        "Plant_3_latlong":"42.6913, -84.6789",
+                        "Plant_3_info":"Lansing Delta Township Assembly: Assembly",
+                        "Plant_4_location":"Shanghai, CN",
+                        "Plant_4_latlong":"31.2242273,120.9162364",
+                        "Plant_4_info":"SAIC General Motors Corporation Limited: Assembly",
+                        "Plant_5_location":"Fairfax, KS",
+                        "Plant_5_latlong":"42.466,-83.291",
+                        "Plant_5_info":"Fairfax Assembly plant"}
+
+}]
