@@ -128,10 +128,17 @@
                              "Fact_Size" : "",
                              "Land_Size" : "",
                           },
-                       
-                        "Plant_3_location":"Anderson, Indiana, US",
-                        "Plant_3_latlong":"40.047,-85.721",
-                        "Plant_3_info":"Delco Remy, Ignition, Batteries",
+                       "Plant_3" : {
+                             "Name":"Delco Remy",
+                             "Location":"Anderson, Indiana, US",
+                             "LatLong":"40.047,-85.721",
+                             "Environment_Rating" : "6/10",
+                             "Community_Involvement":"4/10",
+                             "Num_Employees" :"",
+                             "Fact_Size" : "",
+                             "Land_Size" : "",
+                          },
+                        
                         "Plant_4_location":"Warren, Michigan, US",
                         "Plant_4_latlong":"42.462,-83",
                         "Plant_4_info":"Warren Transmission: Transmission",
