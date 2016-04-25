@@ -5,6 +5,7 @@
                              "Location":"Lafayette, IN",
                              "LatLong":"40.3773138,-86.7990629",
                              "Environment_Rating" : 
+                             "Community_Involvement":
                              "Num_Employees" :
                              "Size" : 
                         }
@@ -13,12 +14,18 @@
                         "Plant_2_location":"Georgetown, KY",
                         "Plant_2_latlong":"38.2610322,-84.5317628",
                         "Plant_2_info":"Toyota Group - TMMK Complex",
+                        "Community_Involvement":
+                             "Num_Employees" :
+                             "Size" : 
                         }
                         
                         "Plant_3" : {
                         "Plant_3_location":"Toyota, Aichi, JP",
                         "Plant_3_latlong":"35.1408902,137.3108723",
                         "Plant_3_info":"Tsutsumi",
+                        "Community_Involvement":
+                             "Num_Employees" :
+                             "Size" : 
                         }
                         
                         "Plant_4" : {
