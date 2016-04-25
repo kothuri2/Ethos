@@ -1,21 +1,36 @@
 [{
 "Toyota Camry" : {
-                        "2015 rank":"1st",
-                        "Plant_1_location":"Lafayette, IN",
-                        "Plant_1_latlong":"40.3773138,-86.7990629",
-                        "Plant_1_info":"Fuji Heavy Industries - SIA Assembly",
+                      "Plant_1" : {
+                             "2015 rank":"1st",
+                             "Plant_1_location":"Lafayette, IN",
+                             "Plant_1_latlong":"40.3773138,-86.7990629",
+                             "Plant_1_info":"Fuji Heavy Industries - SIA Assembly",
+                        }
+                        
+                        "Plant_2" : {
                         "Plant_2_location":"Georgetown, KY",
                         "Plant_2_latlong":"38.2610322,-84.5317628",
                         "Plant_2_info":"Toyota Group - TMMK Complex",
+                        }
+                        
+                        "Plant_3"{
                         "Plant_3_location":"Toyota, Aichi, JP",
                         "Plant_3_latlong":"35.1408902,137.3108723",
                         "Plant_3_info":"Tsutsumi",
+                        }
+                        
+                        "Plant_4"{
                         "Plant_4_location":"Buffalo, WV",
                         "Plant_4_latlong":"38.6074615,-81.9813594",
                         "Plant_4_info":"Toyota Motor Manufacturing West Virginia, Inc.:Engine",
+                        }
+                        
+                        "Plant_5"{
                         "Plant_5_location":"Taiwa, Miyagi, JP",
                         "Plant_5_latlong":"38.4217614,140.8042707",
-                        "Plant_5_info":"Toyota Motor East Japan, Inc.-Miyagi Taiwa: brake, coverters,actuators"}
+                        "Plant_5_info":"Toyota Motor East Japan, Inc.-Miyagi Taiwa: brake, coverters,actuators"
+                        }
+                        
 },
 
 {
