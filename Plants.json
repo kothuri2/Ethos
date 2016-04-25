@@ -11,11 +11,11 @@
                         },
                         
                         "Plant_2" : {
-                        "Plant_2_location":"Georgetown, KY",
-                        "Plant_2_latlong":"38.2610322,-84.5317628",
-                        "Plant_2_info":"Toyota Group - TMMK Complex",
-                        "Environment_Rating" : "",
-                        "Community_Involvement":"",
+                        "Name":"Toyota Group - TMMK Complex",
+                        "Location":"Georgetown, KY",
+                        "LatLong":"38.2610322,-84.5317628",
+                        "Environment_Rating" : "9/10",
+                        "Community_Involvement":"8/10",
                         "Num_Employees" :"",
                         "Size" : "",
                         },
@@ -34,10 +34,10 @@
                         "Plant_4_location":"Buffalo, WV",
                         "Plant_4_latlong":"38.6074615,-81.9813594",
                         "Plant_4_info":"Toyota Motor Manufacturing West Virginia, Inc.:Engine",
-                        "Environment_Rating" : "",
-                        "Community_Involvement":"",
-                        "Num_Employees" :"",
-                        "Size" : "",
+                        "Environment_Rating" : "6/10",
+                        "Community_Involvement":"2/10",
+                        "Num_Employees" :"1300",
+                        "Size" : "270 acres",
                         },
                         
                         "Plant_5" : {
