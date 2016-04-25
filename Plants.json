@@ -43,7 +43,7 @@
                         "Plant_5" : {
                         "Plant_5_location":"Taiwa, Miyagi, JP",
                         "Plant_5_latlong":"38.4217614,140.8042707",
-                        "Plant_5_info":"Toyota Motor East Japan, Inc.-Miyagi Taiwa: brake, coverters,actuators"
+                        "Plant_5_info":"Toyota Motor East Japan, Inc.-Miyagi Taiwa: brake, coverters,actuators",
                         "Environment_Rating" : "",
                         "Community_Involvement":"",
                         "Num_Employees" :"",
@@ -68,7 +68,7 @@
                              "Name":"Kokomo Operations: Electronic Assembly,Transmission",
                              "Location":"Kokomo, Indiana, US",
                              "LatLong":"40.455,-86.109",
-                             "Environment_Rating" : 
+                             "Environment_Rating" : "",
                              "Num_Employees" : "1013",
                              "Fact_size" : "2600000 sq feet",
                              "Land_Size" : "272 acres",
@@ -78,7 +78,7 @@
                              "Name":"Lockport Components: Radiators, Condensers, Evaporators, Oil Coolers",
                              "Location":"Lockport ,New York, US",
                              "LatLong":"43.169,-78.732",
-                             "Environment_Rating" : 
+                             "Environment_Rating" : "",
                              "Num_Employees" :"1587",
                              "Fact_Size" : "2600000 sq feet",
                              "Land_Size" : "495 acres",
@@ -88,7 +88,7 @@
                              "Name":"Pontiac Metal Center: Stamping",
                              "Location":"Pontiac, Michigan, US",
                              "LatLong":"42.466,-83.291",
-                             "Environment_Rating" : 
+                             "Environment_Rating" : "",
                              "Num_Employees" : "491",
                              "Fact_Size" : "1250000 sq feet",
                              "Land_Size" :
@@ -96,10 +96,10 @@
                         "Plant_5" : {
                              "Name":"Port Melbourne: V6 engine"
                              "Location":"Fishermans Bend, Victoria, South Australia",
-                             "LatLong":
-                             "Environment_Rating" : 
-                             "Num_Employees" :
-                             "Size" : 
+                             "LatLong":"",
+                             "Environment_Rating" : "",
+                             "Num_Employees" :"",
+                             "Size" : "",
                         },
 
 },
