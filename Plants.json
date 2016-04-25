@@ -8,7 +8,7 @@
                              "Community_Involvement":"",
                              "Num_Employees" :"",
                              "Size" : "",
-                        }
+                        },
                         
                         "Plant_2" : {
                         "Plant_2_location":"Georgetown, KY",
@@ -18,7 +18,7 @@
                         "Community_Involvement":"",
                         "Num_Employees" :"",
                         "Size" : "",
-                        }
+                        },
                         
                         "Plant_3" : {
                         "Plant_3_location":"Toyota, Aichi, JP",
@@ -28,7 +28,7 @@
                         "Community_Involvement":"",
                         "Num_Employees" :"",
                         "Size" : "",
-                        }
+                        },
                         
                         "Plant_4" : {
                         "Plant_4_location":"Buffalo, WV",
@@ -38,7 +38,7 @@
                         "Community_Involvement":"",
                         "Num_Employees" :"",
                         "Size" : "",
-                        }
+                        },
                         
                         "Plant_5" : {
                         "Plant_5_location":"Taiwa, Miyagi, JP",
@@ -48,7 +48,7 @@
                         "Community_Involvement":"",
                         "Num_Employees" :"",
                         "Size" : "",
-                        }
+                        },
                         
 }
 
@@ -62,7 +62,7 @@
                              "Num_Employees" :"918",
                              "Fact_Size" : "1000000 sq feet",
                              "Land_Size" : "212 acres",
-                          }
+                          },
                           
                            "Plant_2" : {
                              "Name":"Kokomo Operations: Electronic Assembly,Transmission",
@@ -72,7 +72,7 @@
                              "Num_Employees" : "1013",
                              "Fact_size" : "2600000 sq feet",
                              "Land_Size" : "272 acres",
-                        }
+                        },
                         
                          "Plant_3" : {
                              "Name":"Lockport Components: Radiators, Condensers, Evaporators, Oil Coolers",
@@ -82,7 +82,7 @@
                              "Num_Employees" :"1587",
                              "Fact_Size" : "2600000 sq feet",
                              "Land_Size" : "495 acres",
-                        }
+                        },
                         
                         "Plant_4" : {
                              "Name":"Pontiac Metal Center: Stamping",
@@ -92,7 +92,7 @@
                              "Num_Employees" : "491",
                              "Fact_Size" : "1250000 sq feet",
                              "Land_Size" :
-                        }
+                        },
                         "Plant_5" : {
                              "Name":"Port Melbourne: V6 engine"
                              "Location":"Fishermans Bend, Victoria, South Australia",
@@ -100,7 +100,7 @@
                              "Environment_Rating" : 
                              "Num_Employees" :
                              "Size" : 
-                        }
+                        },
 
 },
 {
