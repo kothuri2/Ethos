@@ -162,21 +162,44 @@
 },
 {
 "Buick Enclave" : {
-                        "2015 rank":"6th",
-                        "Plant_1_location":"Warren, Michigan, US",
-                        "Plant_1_latlong":"42.462,-83",
-                        "Plant_1_info":"Warren Transmission: Transmission",
-                        "Plant_2_location":"Pontiac, Michigan, US",
-                        "Plant_2_latlong":"42.466,-83.291",
-                        "Plant_2_info":"Pontiac Metal Center: Stamping",
+  
+                        "Plant_1" : {
+                             "Name":"Warren Transmission",
+                             "Location":"Warren, Michigan, US",
+                             "LatLong":"42.462,-83.000",
+                             "Environment_Rating" : "7/10",
+                             "Community_Involvement":"4/10",
+                             "Num_Employees" :"",
+                             "Fact_Size" : "",
+                             "Land_Size" : "",
+                          },
+                        "Plant_2" : {
+                             "Name":"Pontiac Metal Center",
+                             "Location":"Pontiac, Michigan, US",
+                             "LatLong":"42.466,-83.291",
+                             "Environment_Rating" : "8/10",
+                             "Community_Involvement":"7/10",
+                             "Num_Employees" :"",
+                             "Fact_Size" : "",
+                             "Land_Size" : "",
+                          },
+                        "Plant_5" : {
+                             "Name":"Fairfax Assembly plant",
+                             "Location":"Fairfax, KS",
+                             "LatLong":"42.466,-83.291",
+                             "Environment_Rating" : "6/10",
+                             "Community_Involvement":"4/10",
+                             "Num_Employees" :"3500",
+                             "Fact_Size" : "",
+                             "Land_Size" : "",
+                          },
+                        
                         "Plant_3_location":"Delta Township, Michigan, US",
                         "Plant_3_latlong":"42.6913, -84.6789",
                         "Plant_3_info":"Lansing Delta Township Assembly: Assembly",
                         "Plant_4_location":"Shanghai, CN",
                         "Plant_4_latlong":"31.2242273,120.9162364",
                         "Plant_4_info":"SAIC General Motors Corporation Limited: Assembly",
-                        "Plant_5_location":"Fairfax, KS",
-                        "Plant_5_latlong":"42.466,-83.291",
-                        "Plant_5_info":"Fairfax Assembly plant"}
+                        
 
 }]
