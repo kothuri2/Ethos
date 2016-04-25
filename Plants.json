@@ -21,9 +21,9 @@
                         },
                         
                         "Plant_3" : {
-                        "Plant_3_location":"Toyota, Aichi, JP",
-                        "Plant_3_latlong":"35.1408902,137.3108723",
-                        "Plant_3_info":"Tsutsumi",
+                        "Name":"Tsutsumi",
+                        "Location":"Toyota, Aichi, JP",
+                        "LatLong":"35.1408902,137.3108723",
                         "Environment_Rating" : "",
                         "Community_Involvement":"",
                         "Num_Employees" :"",
@@ -31,9 +31,10 @@
                         },
                         
                         "Plant_4" : {
-                        "Plant_4_location":"Buffalo, WV",
-                        "Plant_4_latlong":"38.6074615,-81.9813594",
-                        "Plant_4_info":"Toyota Motor Manufacturing West Virginia, Inc.:Engine",
+                          
+                        "Name":"Toyota Motor Manufacturing West Virginia, Inc.:Engine",
+                        "Location":"Buffalo, WV",
+                        "LatLong":"38.6074615,-81.9813594",
                         "Environment_Rating" : "6/10",
                         "Community_Involvement":"2/10",
                         "Num_Employees" :"1300",
@@ -41,9 +42,9 @@
                         },
                         
                         "Plant_5" : {
+                        "Name":"Toyota Motor East Japan, Inc.-Miyagi Taiwa",
                         "Plant_5_location":"Taiwa, Miyagi, JP",
                         "Plant_5_latlong":"38.4217614,140.8042707",
-                        "Plant_5_info":"Toyota Motor East Japan, Inc.-Miyagi Taiwa: brake, coverters,actuators",
                         "Environment_Rating" : "",
                         "Community_Involvement":"",
                         "Num_Employees" :"",
@@ -118,7 +119,7 @@
                              "Environment_Rating" : "9/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"2643",
-                             "Fact_Size" : "",
+                             "Fact_Size" : "2,100 acres",
                              "Land_Size" : "",
                           },
                         
@@ -148,8 +149,8 @@
                              "LatLong":"42.462,-83.000",
                              "Environment_Rating" : "7/10",
                              "Community_Involvement":"2/10",
-                             "Num_Employees" :"",
-                             "Fact_Size" : "",
+                             "Num_Employees" :"581",
+                             "Fact_Size" : "2.1 million sq. ft.",
                              "Land_Size" : "",
                           },
                         "Plant_5" : {
