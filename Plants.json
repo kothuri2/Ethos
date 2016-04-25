@@ -148,12 +148,17 @@
                              "Fact_Size" : "",
                              "Land_Size" : "",
                           },
-                        "Plant_4_location":"Warren, Michigan, US",
-                        "Plant_4_latlong":"42.462,-83",
-                        "Plant_4_info":"Warren Transmission: Transmission",
-                        "Plant_5_location":"Pontiac, Michigan, US",
-                        "Plant_5_latlong":"42.466,-83.291",
-                        "Plant_5_info":"Pontiac Metal Center: Stamping"}
+                        "Plant_5" : {
+                             "Name":"Pontiac Metal Center",
+                             "Location":"Pontiac, Michigan, US",
+                             "LatLong":"42.466,-83.291",
+                             "Environment_Rating" : "8/10",
+                             "Community_Involvement":"7/10",
+                             "Num_Employees" :"",
+                             "Fact_Size" : "",
+                             "Land_Size" : "",
+                          }
+                        
 },
 {
 "Buick Enclave" : {
