@@ -12,7 +12,8 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 //app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-   res.sendFile( __dirname + "/templates/" + "index.html" );
+  res.sendFile(__dirname + "/globe/globe/index.html");
+   /*res.sendFile( __dirname + "/templates/" + "index.html" );
    var html = mustache.to_html(template["index.html"], 
     {Model: "", Rank: "",
     Model2: "Car Model",
@@ -32,7 +33,7 @@ app.get('/', function (req, res) {
      Plant_5_latlong: "",
      Plant_5_info: "",
    });
-   res.send(html);
+   res.send(html);*/
 })
 
 app.post('/process_post', urlencodedParser, function (req, res) {
