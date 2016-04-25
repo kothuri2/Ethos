@@ -1,60 +1,164 @@
 [{
 "Toyota Camry" : {
-                        "2015 rank":"1st",
-                        "Plant_1_location":"Lafayette, IN",
-                        "Plant_1_latlong":"40.3773138,-86.7990629",
-                        "Plant_1_info":"Fuji Heavy Industries - SIA Assembly",
+                      "Plant_1" : {
+                             "Name":"Fuji Heavy Industries - SIA Assembly",
+                             "Location":"Lafayette, IN",
+                             "LatLong":"40.3773138,-86.7990629",
+                             "Environment_Rating" : "",
+                             "Community_Involvement":"",
+                             "Num_Employees" :"",
+                             "Size" : "",
+                        },
+                        
+                        "Plant_2" : {
                         "Plant_2_location":"Georgetown, KY",
                         "Plant_2_latlong":"38.2610322,-84.5317628",
                         "Plant_2_info":"Toyota Group - TMMK Complex",
+                        "Environment_Rating" : "",
+                        "Community_Involvement":"",
+                        "Num_Employees" :"",
+                        "Size" : "",
+                        },
+                        
+                        "Plant_3" : {
                         "Plant_3_location":"Toyota, Aichi, JP",
                         "Plant_3_latlong":"35.1408902,137.3108723",
                         "Plant_3_info":"Tsutsumi",
+                        "Environment_Rating" : "",
+                        "Community_Involvement":"",
+                        "Num_Employees" :"",
+                        "Size" : "",
+                        },
+                        
+                        "Plant_4" : {
                         "Plant_4_location":"Buffalo, WV",
                         "Plant_4_latlong":"38.6074615,-81.9813594",
                         "Plant_4_info":"Toyota Motor Manufacturing West Virginia, Inc.:Engine",
+                        "Environment_Rating" : "",
+                        "Community_Involvement":"",
+                        "Num_Employees" :"",
+                        "Size" : "",
+                        },
+                        
+                        "Plant_5" : {
                         "Plant_5_location":"Taiwa, Miyagi, JP",
                         "Plant_5_latlong":"38.4217614,140.8042707",
-                        "Plant_5_info":"Toyota Motor East Japan, Inc.-Miyagi Taiwa: brake, coverters,actuators"}
+                        "Plant_5_info":"Toyota Motor East Japan, Inc.-Miyagi Taiwa: brake, coverters,actuators",
+                        "Environment_Rating" : "",
+                        "Community_Involvement":"",
+                        "Num_Employees" :"",
+                        "Size" : "",
+                        }
+                        
+}
 },
 
 {
 "Chevrolot Corvette" : {
-                        "2015 rank":"2nd",
-                        "Plant_1_location":"Bowling Green, Kentucky",
-                        "Plant_1_latlong":"37.009,86.373",
-                        "Plant_1_info":"Bowling Green Assembly Plant",
-                        "Plant_2_location":"Kokomo, Indiana, US",
-                        "Plant_2_latlong":"40.455,-86.109",
-                        "Plant_2_info":"Kokomo Operations: Electronic Assembly,Transmission",
-                        "Plant_3_location":"Lockport ,New York, US",
-                        "Plant_3_latlong":"43.169,-78.732",
-                        "Plant_3_info":"Lockport Components: Radiators, Condensers, Evaporators, Oil Coolers",
-                        "Plant_4_location":"Pontiac, Michigan, US",
-                        "Plant_4_latlong":"42.466,-83.291",
-                        "Plant_4_info":"Pontiac Metal Center: Stamping",
-                        "Plant_5_location":"Fishermans Bend, Victoria, South Australia",
-                        "Plant_5_latlong":"lon,lat",
-                        "Plant_5_info":"Port Melbourne: V6 engine"}
+                          "Plant_1" : {
+                             "Name":"Bowling Green Assembly Plant",
+                             "Location":"Bowling Green, Kentucky",
+                             "LatLong":"37.009,86.373",
+                             "Environment_Rating" : "",
+                             "Num_Employees" :"918",
+                             "Fact_Size" : "1000000 sq feet",
+                             "Land_Size" : "212 acres",
+                          },
+                          
+                           "Plant_2" : {
+                             "Name":"Kokomo Operations: Electronic Assembly,Transmission",
+                             "Location":"Kokomo, Indiana, US",
+                             "LatLong":"40.455,-86.109",
+                             "Environment_Rating" : "",
+                             "Num_Employees" : "1013",
+                             "Fact_size" : "2600000 sq feet",
+                             "Land_Size" : "272 acres",
+                        },
+                        
+                         "Plant_3" : {
+                             "Name":"Lockport Components: Radiators, Condensers, Evaporators, Oil Coolers",
+                             "Location":"Lockport ,New York, US",
+                             "LatLong":"43.169,-78.732",
+                             "Environment_Rating" : "",
+                             "Num_Employees" :"1587",
+                             "Fact_Size" : "2600000 sq feet",
+                             "Land_Size" : "495 acres",
+                        },
+                        
+                        "Plant_4" : {
+                             "Name":"Pontiac Metal Center: Stamping",
+                             "Location":"Pontiac, Michigan, US",
+                             "LatLong":"42.466,-83.291",
+                             "Environment_Rating" : "",
+                             "Num_Employees" : "491",
+                             "Fact_Size" : "1250000 sq feet",
+                             "Land_Size" :
+                        },
+                        "Plant_5" : {
+                             "Name":"Port Melbourne: V6 engine",
+                             "Location":"Fishermans Bend, Victoria, South Australia",
+                             "LatLong":"",
+                             "Environment_Rating" : "",
+                             "Num_Employees" :"",
+                             "Size" : "",
+                        }
+}
 },
 {
 "Chevrolot Traverse" : {
-                        "2015 rank":"3rd",
-                        "Plant_1_location":"Spring Hill, Tennessee, US",
-                        "Plant_1_latlong":"35.743,86.957",
-                        "Plant_1_info":"Spring Hill Manufacturing",
-                        "Plant_2_location":"Moraine, Ohio, US",
-                        "Plant_2_latlong":"46.909,-96.808",
-                        "Plant_2_info":"Delco Moraine NDH, brake pad",
-                        "Plant_3_location":"Anderson, Indiana, US",
-                        "Plant_3_latlong":"40.047,-85.721",
-                        "Plant_3_info":"Delco Remy, Ignition, Batteries",
-                        "Plant_4_location":"Warren, Michigan, US",
-                        "Plant_4_latlong":"42.462,-83",
-                        "Plant_4_info":"Warren Transmission: Transmission",
-                        "Plant_5_location":"Pontiac, Michigan, US",
-                        "Plant_5_latlong":"42.466,-83.291",
-                        "Plant_5_info":"Pontiac Metal Center: Stamping"}
+  
+                        "Plant_1" : {
+                             "Name":"Spring Hill Manufacturing",
+                             "Location":"Spring Hill, Tennessee, US",
+                             "LatLong":"35.743,86.957",
+                             "Environment_Rating" : "9/10",
+                             "Community_Involvement":"4/10",
+                             "Num_Employees" :"2643",
+                             "Fact_Size" : "",
+                             "Land_Size" : "",
+                          },
+                        
+                        "Plant_2" : {
+                             "Name":"Delco Moraine NDH",
+                             "Location":"Moraine, Ohio, US",
+                             "LatLong":"46.909,-96.808",
+                             "Environment_Rating" : "8/10",
+                             "Community_Involvement":"4/10",
+                             "Num_Employees" :"",
+                             "Fact_Size" : "",
+                             "Land_Size" : "",
+                          },
+                       "Plant_3" : {
+                             "Name":"Delco Remy",
+                             "Location":"Anderson, Indiana, US",
+                             "LatLong":"40.047,-85.721",
+                             "Environment_Rating" : "5/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" :"",
+                             "Fact_Size" : "",
+                             "Land_Size" : "",
+                          },
+                        "Plant_4" : {
+                             "Name":"Warren Transmission",
+                             "Location":"Warren, Michigan, US",
+                             "LatLong":"42.462,-83.000",
+                             "Environment_Rating" : "7/10",
+                             "Community_Involvement":"4/10",
+                             "Num_Employees" :"",
+                             "Fact_Size" : "",
+                             "Land_Size" : "",
+                          },
+                        "Plant_5" : {
+                             "Name":"Pontiac Metal Center",
+                             "Location":"Pontiac, Michigan, US",
+                             "LatLong":"42.466,-83.291",
+                             "Environment_Rating" : "8/10",
+                             "Community_Involvement":"7/10",
+                             "Num_Employees" :"",
+                             "Fact_Size" : "",
+                             "Land_Size" : "",
+                          }
+}                       
 },
 {
 "Buick Enclave" : {
