@@ -106,6 +106,17 @@
 },
 {
 "Chevrolot Traverse" : {
+  
+                        "Plant_1" : {
+                             "Name":"Spring Hill Manufacturing",
+                             "Location":"Spring Hill, Tennessee, US",
+                             "LatLong":"35.743,86.957",
+                             "Environment_Rating" : "9/10",
+                             "Community_Involvement":"4/10",
+                             "Num_Employees" :"2643",
+                             "Fact_Size" : "",
+                             "Land_Size" : "",
+                          },
                         "2015 rank":"3rd",
                         "Plant_1_location":"Spring Hill, Tennessee, US",
                         "Plant_1_latlong":"35.743,86.957",
