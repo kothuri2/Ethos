@@ -13,19 +13,19 @@
                         "Plant_2_info":"Toyota Group - TMMK Complex",
                         }
                         
-                        "Plant_3"{
+                        "Plant_3" : {
                         "Plant_3_location":"Toyota, Aichi, JP",
                         "Plant_3_latlong":"35.1408902,137.3108723",
                         "Plant_3_info":"Tsutsumi",
                         }
                         
-                        "Plant_4"{
+                        "Plant_4" : {
                         "Plant_4_location":"Buffalo, WV",
                         "Plant_4_latlong":"38.6074615,-81.9813594",
                         "Plant_4_info":"Toyota Motor Manufacturing West Virginia, Inc.:Engine",
                         }
                         
-                        "Plant_5"{
+                        "Plant_5" : {
                         "Plant_5_location":"Taiwa, Miyagi, JP",
                         "Plant_5_latlong":"38.4217614,140.8042707",
                         "Plant_5_info":"Toyota Motor East Japan, Inc.-Miyagi Taiwa: brake, coverters,actuators"
