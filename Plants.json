@@ -159,8 +159,8 @@
                              "LatLong":"42.466,-83.291",
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"7/10",
-                             "Num_Employees" :"",
-                             "Fact_Size" : "",
+                             "Num_Employees" :"491",
+                             "Fact_Size" : "1.25 million sq. ft.",
                              "Land_Size" : "",
                           }
 }                       
@@ -174,8 +174,8 @@
                              "LatLong":"42.462,-83.000",
                              "Environment_Rating" : "7/10",
                              "Community_Involvement":"2/10",
-                             "Num_Employees" :"",
-                             "Fact_Size" : "",
+                             "Num_Employees" :"581",
+                             "Fact_Size" : "2.1 million sq. ft.",
                              "Land_Size" : "",
                           },
                         "Plant_2" : {
@@ -184,8 +184,28 @@
                              "LatLong":"42.466,-83.291",
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"7/10",
+                             "Num_Employees" :"491",
+                             "Fact_Size" : "1.25 million sq. ft.",
+                             "Land_Size" : "",
+                          },
+                          "Plant_3" : {
+                             "Name":"Lansing Delta Township Assembly",
+                             "Location":"Delta Township, Michigan, US",
+                             "LatLong":"42.6913, -84.6789",
+                             "Environment_Rating" : "",
+                             "Community_Involvement":"",
                              "Num_Employees" :"",
                              "Fact_Size" : "",
+                             "Land_Size" : "",
+                          },
+                        "Plant_4" : {
+                             "Name":"SAIC General Motors Corporation Limited",
+                             "Location":"Shanghai, CN",
+                             "LatLong":"31.2242273,120.9162364",
+                             "Environment_Rating" : "7/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" :"581",
+                             "Fact_Size" : "2.1 million sq. ft.",
                              "Land_Size" : "",
                           },
                         "Plant_5" : {
@@ -197,14 +217,8 @@
                              "Num_Employees" :"3500",
                              "Fact_Size" : "",
                              "Land_Size" : "",
-                          },
+                          }
                         
-                        "Plant_3_location":"Delta Township, Michigan, US",
-                        "Plant_3_latlong":"42.6913, -84.6789",
-                        "Plant_3_info":"Lansing Delta Township Assembly: Assembly",
-                        "Plant_4_location":"Shanghai, CN",
-                        "Plant_4_latlong":"31.2242273,120.9162364",
-                        "Plant_4_info":"SAIC General Motors Corporation Limited: Assembly"
                         
 
 }]
