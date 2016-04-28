@@ -127,21 +127,21 @@
     }
   });
 
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'search.json', true);
-  xhr.onreadystatechange = function(e) {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        var data = JSON.parse(xhr.responseText);
-        window.data = data;
-        globe.addData(data, {format: 'legend'});
-        globe.createPoints();
-        globe.animate();
-        document.body.style.backgroundImage = 'none'; // remove loading
-      }
-    }
-  };
-  xhr.send(null);
+  // var xhr = new XMLHttpRequest();
+  // xhr.open('GET', 'search.json', true);
+  // xhr.onreadystatechange = function(e) {
+  //   if (xhr.readyState === 4) {
+  //     if (xhr.status === 200) {
+  //       var data = JSON.parse(xhr.responseText);
+  //       window.data = data;
+  //       globe.addData(data, {format: 'legend'});
+  //       globe.createPoints();
+  //       globe.animate();
+  //       document.body.style.backgroundImage = 'none'; // remove loading
+  //     }
+  //   }
+  // };
+  // xhr.send(null);
 
 </script>
 
