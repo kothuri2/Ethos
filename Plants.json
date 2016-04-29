@@ -265,6 +265,26 @@
                              "Num_Employees" : "3900",
                              "Fact_size" : "716 acres",
                              
+                        },
+                        "Plant_4" : {
+                             "Name":"Pontiac Metal Center: Stamping",
+                             "Location":"Silao, Gto 36100, MX",
+                             "LatLong":"20.943,-101.425",
+                             "Environment_Rating" : "/10",
+                             "Community_Involvement":"/10",
+                             "Num_Employees" : "2957",
+                             "Fact_Size" : "1.2 million square feet",
+                             
+                        },
+                        "Plant_5" : {
+                             "Name":"Oshawa Truck Assembly",
+                             "Location":"Oshawa, Ontario, Canada",
+                             "LatLong":"43.872,-78.861",
+                             "Environment_Rating" : "8/10",
+                             "Community_Involvement":"8/10",
+                             "Num_Employees" : "2900",
+                             "Fact_Size" : "10 million square feet",
+                            
                         }
   }
 },
