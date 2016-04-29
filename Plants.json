@@ -235,6 +235,40 @@
   }
 },
 {
+  "GMC Sierra":""{
+                        "Plant_1" : {
+                             "Name":"Baltimore Operations",
+                             "Location":"White Marsh, Maryland, US",
+                             "LatLong":"39.372,-76.439",
+                             "Environment_Rating" : "8/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" : "264",
+                             "Fact_size" : "471,000 sq. ft.",
+                             
+                        },
+                        "Plant_2" : {
+                             "Name":"Flint Assembly",
+                             "Location":"Flint, Michigan, US",
+                             "LatLong":"42.985,-83.717",
+                             "Environment_Rating" : "5/10",
+                             "Community_Involvement":"5/10",
+                             "Num_Employees" : "2820",
+                             "Fact_size" : "159 acres",
+                             
+                        },
+                        "Plant_3" : {
+                             "Name":"Fort Wayne",
+                             "Location":"Roanoke, Indiana, US",
+                             "LatLong":"40.962,-85.303",
+                             "Environment_Rating" : "6/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" : "3900",
+                             "Fact_size" : "716 acres",
+                             
+                        }
+  }
+},
+{
 "Buick Enclave" : {
   
                         "Plant_1" : {
