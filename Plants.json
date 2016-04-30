@@ -99,6 +99,7 @@
                              "Fact_Size" : "1250000 sq feet",
                              "Land_Size" :
                         },
+                        
                         "Plant_5" : {
                              "Name":"Port Melbourne: V6 engine",
                              "Location":"Fishermans Bend, Victoria, South Australia",
@@ -166,6 +167,128 @@
 }                       
 },
 {
+  "Cadillac CTS":""{
+                        "Plant_1" : {
+                             "Name":"Rochester Operations",
+                             "Location":"Rochester, New York, US",
+                             "LatLong":"40.113,-88.227",
+                             "Environment_Rating" : "6/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" : "1061",
+                             "Fact_size" : "97 acres",
+                             
+                        },
+                        "Plant_2" : {
+                             "Name":"Flint Tool & Die",
+                             "Location":"Flint, Michigan, US",
+                             "LatLong":"43.012,-83.701",
+                             "Environment_Rating" : "6/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" : "443",
+                             "Fact_size" : "318,500 square feet",
+                             
+                        },
+                        "Plant_3" : {
+                             "Name":"Lansing Grand River Assembly",
+                             "Location":"Lansing, Michigan, US",
+                             "LatLong":"42.724,-84.556",
+                             "Environment_Rating" : "4/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" : "1780",
+                             "Fact_size" : "111 acres",
+                             
+                        }
+  }
+},
+{
+  "Chevrolet Cruze":""{
+                        "Plant_1" : {
+                             "Name":"Lordstown Complex",
+                             "Location":"Warren, Ohio, US",
+                             "LatLong":"40.113,-88.227",
+                             "Environment_Rating" : "5/10",
+                             "Community_Involvement":"6/10",
+                             "Num_Employees" : "4500",
+                             "Fact_size" : "905 acres",
+                             
+                        },
+                        "Plant_2" : {
+                             "Name":"Flint Engine Operations",
+                             "Location":"Flint, Michigan, US",
+                             "LatLong":"43.982,-83.718",
+                             "Environment_Rating" : "5/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" : "856",
+                             "Fact_size" : "1,165,212 sq ft",
+                             
+                        },
+                        "Plant_3" : {
+                             "Name":"GM Holden Ltd.",
+                             "Location":"Elizabeth, South Australia",
+                             "LatLong":"-34.720,138.671",
+                             "Environment_Rating" : "7/10",
+                             "Community_Involvement":"4/10",
+                             "Num_Employees" : "1250",
+                             "Fact_size" : "",
+                             
+                        }
+  }
+},
+{
+  "GMC Sierra":""{
+                        "Plant_1" : {
+                             "Name":"Baltimore Operations",
+                             "Location":"White Marsh, Maryland, US",
+                             "LatLong":"39.372,-76.439",
+                             "Environment_Rating" : "8/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" : "264",
+                             "Fact_size" : "471,000 sq. ft.",
+                             
+                        },
+                        "Plant_2" : {
+                             "Name":"Flint Assembly",
+                             "Location":"Flint, Michigan, US",
+                             "LatLong":"42.985,-83.717",
+                             "Environment_Rating" : "5/10",
+                             "Community_Involvement":"5/10",
+                             "Num_Employees" : "2820",
+                             "Fact_size" : "159 acres",
+                             
+                        },
+                        "Plant_3" : {
+                             "Name":"Fort Wayne",
+                             "Location":"Roanoke, Indiana, US",
+                             "LatLong":"40.962,-85.303",
+                             "Environment_Rating" : "6/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" : "3900",
+                             "Fact_size" : "716 acres",
+                             
+                        },
+                        "Plant_4" : {
+                             "Name":"Pontiac Metal Center: Stamping",
+                             "Location":"Silao, Gto 36100, MX",
+                             "LatLong":"20.943,-101.425",
+                             "Environment_Rating" : "/10",
+                             "Community_Involvement":"/10",
+                             "Num_Employees" : "2957",
+                             "Fact_Size" : "1.2 million square feet",
+                             
+                        },
+                        "Plant_5" : {
+                             "Name":"Oshawa Truck Assembly",
+                             "Location":"Oshawa, Ontario, Canada",
+                             "LatLong":"43.872,-78.861",
+                             "Environment_Rating" : "8/10",
+                             "Community_Involvement":"8/10",
+                             "Num_Employees" : "2900",
+                             "Fact_Size" : "10 million square feet",
+                            
+                        }
+  }
+},
+{
 "Buick Enclave" : {
   
                         "Plant_1" : {
@@ -188,6 +311,26 @@
                              "Fact_Size" : "1250000 sq feet",
                              "Land_Size" : "",
                           },
+                        "Plant_3" : {
+                             "Name":"Lansing Delta Township",
+                             "Location":"Delta Township, Michigan, US",
+                             "LatLong":"42.6913, -84.6789",
+                             "Environment_Rating" : "7/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" :"3486",
+                             "Fact_Size" : "3.4 million sq. ft.",
+                             
+                          },
+                          "Plant_4" : {
+                             "Name":"SAIC General Motors Corporation Limited",
+                             "Location":"Shanghai, CN",
+                             "LatLong":"31.224,120.916",
+                             "Environment_Rating" : "5/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" :"",
+                             "Fact_Size" : "",
+                             
+                          },
                         "Plant_5" : {
                              "Name":"Fairfax Assembly plant",
                              "Location":"Fairfax, KS",
@@ -195,17 +338,10 @@
                              "Environment_Rating" : "6/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"3500",
-                             "Fact_Size" : "",
-                             "Land_Size" : "",
-                          },
-                        
-                        "Plant_3_location":"Delta Township, Michigan, US",
-                        "Plant_3_latlong":"42.6913, -84.6789",
-                        "Plant_3_info":"Lansing Delta Township Assembly: Assembly",
-                        "Plant_4_location":"Shanghai, CN",
-                        "Plant_4_latlong":"31.2242273,120.9162364",
-                        "Plant_4_info":"SAIC General Motors Corporation Limited: Assembly"
-                        
+                             "Fact_Size" : " 4,900,000 sq. ft.",
+                             
+                          }
+                       
 
 }
 }]
