@@ -1,6 +1,6 @@
 /**
  * dat.globe Javascript WebGL Globe Toolkit
- * https://github.com/dataarts/webgl-globe
+ * http://dataarts.github.com/dat.globe
  *
  * Copyright 2011 Data Arts Team, Google Creative Lab
  *
@@ -11,22 +11,22 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  */
 
+var SPIN_ID=0;
+
 var DAT = DAT || {};
 
-DAT.Globe = function(container, opts) {
-  opts = opts || {};
-  
-  var colorFn = opts.colorFn || function(x) {
+DAT.Globe = function(container, colorFn) {
+
+  colorFn = colorFn || function(x) {
     var c = new THREE.Color();
-    c.setHSL( ( 0.6 - ( x * 0.5 ) ), 1.0, 0.5 );
+    c.setRGB(generateColor(x).red/255, generateColor(x).green/255, generateColor(x).blue/255);
     return c;
   };
-  //var imgDir = opts.imgDir || '/globe/';
 
   var Shaders = {
     'earth' : {
       uniforms: {
-        'texture': { type: 't', value: null }
+        'texture': { type: 't', value: 0, texture: null }
       },
       vertexShader: [
         'varying vec3 vNormal;',
@@ -68,22 +68,25 @@ DAT.Globe = function(container, opts) {
     }
   };
 
-  var camera, scene, renderer, w, h;
-  var mesh, atmosphere, point;
+  var camera, scene, sceneAtmosphere, renderer, w, h;
+  var vector, mesh, atmosphere, point;
 
   var overRenderer;
+
+  var imgDir = '';
 
   var curZoomSpeed = 0;
   var zoomSpeed = 50;
 
   var mouse = { x: 0, y: 0 }, mouseOnDown = { x: 0, y: 0 };
   var rotation = { x: 0, y: 0 },
-      target = { x: Math.PI*3/2, y: Math.PI / 6.0 },
+      target = { x: Math.PI*.7, y: Math.PI / 6.0 },
       targetOnDown = { x: 0, y: 0 };
 
   var distance = 100000, distanceTarget = 100000;
   var padding = 40;
   var PI_HALF = Math.PI / 2;
+  var particles, particle, geo2;
 
   function init() {
 
@@ -94,19 +97,24 @@ DAT.Globe = function(container, opts) {
     w = container.offsetWidth || window.innerWidth;
     h = container.offsetHeight || window.innerHeight;
 
-    camera = new THREE.PerspectiveCamera(30, w / h, 1, 10000);
+    camera = new THREE.Camera(
+        30, w / h, 1, 10000);
     camera.position.z = distance;
 
-    scene = new THREE.Scene();
+    vector = new THREE.Vector3();
 
-    var geometry = new THREE.SphereGeometry(200, 40, 30);
+    scene = new THREE.Scene();
+    sceneAtmosphere = new THREE.Scene();
+
+    var geometry = new THREE.Sphere(200, 40, 30);
 
     shader = Shaders['earth'];
     uniforms = THREE.UniformsUtils.clone(shader.uniforms);
+    
+    var customtext = (storage.getItem('texture') == 'world') ? 'world' : 'worldvegi';
+    uniforms['texture'].texture = THREE.ImageUtils.loadTexture(customtext + '.jpg');
 
-    uniforms['texture'].value = THREE.ImageUtils.loadTexture('world2.jpg');
-
-    material = new THREE.ShaderMaterial({
+    material = new THREE.MeshShaderMaterial({
 
           uniforms: uniforms,
           vertexShader: shader.vertexShader,
@@ -115,33 +123,52 @@ DAT.Globe = function(container, opts) {
         });
 
     mesh = new THREE.Mesh(geometry, material);
-    mesh.rotation.y = Math.PI;
-    scene.add(mesh);
+    mesh.matrixAutoUpdate = false;
+    scene.addObject(mesh);
 
     shader = Shaders['atmosphere'];
     uniforms = THREE.UniformsUtils.clone(shader.uniforms);
 
-    material = new THREE.ShaderMaterial({
+    material = new THREE.MeshShaderMaterial({
 
           uniforms: uniforms,
           vertexShader: shader.vertexShader,
-          fragmentShader: shader.fragmentShader,
-          side: THREE.BackSide,
-          blending: THREE.AdditiveBlending,
-          transparent: true
+          fragmentShader: shader.fragmentShader
 
         });
 
     mesh = new THREE.Mesh(geometry, material);
-    mesh.scale.set( 1.1, 1.1, 1.1 );
-    scene.add(mesh);
+    mesh.scale.x = mesh.scale.y = mesh.scale.z = 1.1;
+    mesh.flipSided = true;
+    mesh.matrixAutoUpdate = false;
+    mesh.updateMatrix();
+    sceneAtmosphere.addObject(mesh);
+    
+    geometry = new THREE.Cylinder( 20, 1, 1, 1 );
+    var geometry2 = new THREE.Cylinder( 10, 1, 1, 1 );
+   // var wiregeo = new THREE.Cube(40, 40, 40, 1, 1, 1);
+	//var mat = new THREE.MeshBasicMaterial( {wireframe:true} );
+//	var container = document.getElementById("iffcontainer");
+	
+    for (var i = 0; i < geometry.vertices.length; i++) {
+      var vertex = geometry.vertices[i];
+      vertex.position.z += 0.5;
 
-    geometry = new THREE.BoxGeometry(0.75, 0.75, 1);
-    geometry.applyMatrix(new THREE.Matrix4().makeTranslation(0,0,-0.5));
-
+    }
+    for (var i = 0; i < geometry2.vertices.length; i++) {
+      var vertex = geometry2.vertices[i];
+      vertex.position.z += 0.5;
+    }
+    
+	
     point = new THREE.Mesh(geometry);
+    line  = new THREE.Mesh(geometry2);
+   
+
 
     renderer = new THREE.WebGLRenderer({antialias: true});
+    renderer.autoClear = false;
+    renderer.setClearColorHex(0x000000, 0.0);
     renderer.setSize(w, h);
 
     renderer.domElement.style.position = 'absolute';
@@ -149,7 +176,7 @@ DAT.Globe = function(container, opts) {
     container.appendChild(renderer.domElement);
 
     container.addEventListener('mousedown', onMouseDown, false);
-
+    container.addEventListener('click', onClick, false);
     container.addEventListener('mousewheel', onMouseWheel, false);
 
     document.addEventListener('keydown', onDocumentKeyDown, false);
@@ -163,90 +190,61 @@ DAT.Globe = function(container, opts) {
     container.addEventListener('mouseout', function() {
       overRenderer = false;
     }, false);
+    
+    
+    
+    
+    SPIN_ID = setInterval(function() {
+                          
+                          rotate();
+                          
+                          }, 1000/60);
+    
   }
 
-  function addData(data, opts) {
+  addData = function(data, opts) {
     var lat, lng, size, color, i, step, colorFnWrapper;
-
-    opts.animated = opts.animated || false;
-    this.is_animated = opts.animated;
-    opts.format = opts.format || 'magnitude'; // other option is 'legend'
-    if (opts.format === 'magnitude') {
-      step = 3;
-      colorFnWrapper = function(data, i) { return colorFn(data[i+2]); }
-    } else if (opts.format === 'legend') {
-      step = 4;
-      colorFnWrapper = function(data, i) { return colorFn(data[i+3]); }
-    } else {
-      throw('error: format not supported: '+opts.format);
-    }
-
-    if (opts.animated) {
-      if (this._baseGeometry === undefined) {
-        this._baseGeometry = new THREE.Geometry();
-        for (i = 0; i < data.length; i += step) {
-          lat = data[i];
-          lng = data[i + 1];
-//        size = data[i + 2];
-          color = colorFnWrapper(data,i);
-          size = 0;
-          addPoint(lat, lng, size, color, this._baseGeometry);
-        }
-      }
-      if(this._morphTargetId === undefined) {
-        this._morphTargetId = 0;
-      } else {
-        this._morphTargetId += 1;
-      }
-      opts.name = opts.name || 'morphTarget'+this._morphTargetId;
-    }
+    step = 3;
+    colorFnWrapper = function(data, i) { return colorFn(data[i].classVal); }
+  //  console.log(data);
     var subgeo = new THREE.Geometry();
-    for (i = 0; i < data.length; i += step) {
-      lat = data[i];
-      lng = data[i + 1];
-      color = colorFnWrapper(data,i);
-      size = data[i + 2];
-      size = size*200;
+    for (i in data) {
+      lat = parseFloat(data[i].lat);
+      lng = parseFloat(data[i].lon);
+      color = colorFnWrapper(data, i);
+      size = parseFloat(data[i].mass);
+      size = Math.sqrt(size);
       addPoint(lat, lng, size, color, subgeo);
     }
-    if (opts.animated) {
-      this._baseGeometry.morphTargets.push({'name': opts.name, vertices: subgeo.vertices});
-    } else {
-      this._baseGeometry = subgeo;
-    }
+    this._baseGeometry = subgeo;
 
   };
+  
+  resetData = function()
+  {
+    if (this.points === undefined) return;
+
+    this.is_animated = false;
+  //  console.log('here');
+    scene.removeObject(this.points);
+    delete this.points;
+    delete this._morphTargetId;
+    delete this._baseGeometry;
+  }
 
   function createPoints() {
     if (this._baseGeometry !== undefined) {
-      if (this.is_animated === false) {
+
         this.points = new THREE.Mesh(this._baseGeometry, new THREE.MeshBasicMaterial({
               color: 0xffffff,
               vertexColors: THREE.FaceColors,
               morphTargets: false
             }));
-      } else {
-        if (this._baseGeometry.morphTargets.length < 8) {
-          console.log('t l',this._baseGeometry.morphTargets.length);
-          var padding = 8-this._baseGeometry.morphTargets.length;
-          console.log('padding', padding);
-          for(var i=0; i<=padding; i++) {
-            console.log('padding',i);
-            this._baseGeometry.morphTargets.push({'name': 'morphPadding'+i, vertices: this._baseGeometry.vertices});
-          }
-        }
-        this.points = new THREE.Mesh(this._baseGeometry, new THREE.MeshBasicMaterial({
-              color: 0xffffff,
-              vertexColors: THREE.FaceColors,
-              morphTargets: true
-            }));
-      }
-      scene.add(this.points);
+      scene.addObject(this.points);
     }
   }
 
   function addPoint(lat, lng, size, color, subgeo) {
-
     var phi = (90 - lat) * Math.PI / 180;
     var theta = (180 - lng) * Math.PI / 180;
 
@@ -256,20 +254,48 @@ DAT.Globe = function(container, opts) {
 
     point.lookAt(mesh.position);
 
-    point.scale.z = Math.max( size, 0.1 ); // avoid non-invertible matrix
+    point.scale.z = .01;//-size + 100;
+    point.scale.x = size*.01;
+    point.scale.y = size*.01;
     point.updateMatrix();
-
-    for (var i = 0; i < point.geometry.faces.length; i++) {
+    
+    var i;
+    for (i = 0; i < point.geometry.faces.length; i++) {
 
       point.geometry.faces[i].color = color;
 
     }
-    if(point.matrixAutoUpdate){
-      point.updateMatrix();
+    
+    line.position.x = 200 * Math.sin(phi) * Math.cos(theta);
+    line.position.y = 200 * Math.cos(phi);
+    line.position.z = 200 * Math.sin(phi) * Math.sin(theta);
+
+    line.lookAt(mesh.position);
+
+    line.scale.z = -size*0.5;
+    line.scale.x = size*.005;
+    line.scale.y = size*.005;
+    line.updateMatrix();
+    
+    var i;
+    for (i = 0; i < line.geometry.faces.length; i++) {
+
+      line.geometry.faces[i].color = color;
+
     }
-    subgeo.merge(point.geometry, point.matrix);
+    
+    
+    GeometryUtils.merge(subgeo, point);
+    GeometryUtils.merge(subgeo, line);
   }
 
+  function onClick (event) {
+	  event.preventDefault();
+	  console.log(event.clientX + ":" + event.clientY);
+	  console.log(mouse.x + ":" + mouse.y);
+	  console.log(target.x+ ":" + target.y);
+  }
+  
   function onMouseDown(event) {
     event.preventDefault();
 
@@ -334,9 +360,9 @@ DAT.Globe = function(container, opts) {
   }
 
   function onWindowResize( event ) {
-    camera.aspect = container.offsetWidth / container.offsetHeight;
+    camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
-    renderer.setSize( container.offsetWidth, container.offsetHeight );
+    renderer.setSize( window.innerWidth, window.innerHeight );
   }
 
   function zoom(delta) {
@@ -345,15 +371,21 @@ DAT.Globe = function(container, opts) {
     distanceTarget = distanceTarget < 350 ? 350 : distanceTarget;
   }
 
+  function rotate(){
+    
+     target.x -= 0.00008;
+    
+  }
   function animate() {
     requestAnimationFrame(animate);
+  //  checkHurricanes();
     render();
   }
 
   function render() {
     zoom(curZoomSpeed);
 
-    rotation.x += (target.x - rotation.x) * 0.1;
+    rotation.x += (target.x - rotation.x) * 0.1;//0.1;
     rotation.y += (target.y - rotation.y) * 0.1;
     distance += (distanceTarget - distance) * 0.3;
 
@@ -361,45 +393,19 @@ DAT.Globe = function(container, opts) {
     camera.position.y = distance * Math.sin(rotation.y);
     camera.position.z = distance * Math.cos(rotation.x) * Math.cos(rotation.y);
 
-    camera.lookAt(mesh.position);
+    vector.copy(camera.position);
 
+    renderer.clear();
+    
     renderer.render(scene, camera);
+    renderer.render(sceneAtmosphere, camera);
   }
 
   init();
   this.animate = animate;
-
-
-  this.__defineGetter__('time', function() {
-    return this._time || 0;
-  });
-
-  this.__defineSetter__('time', function(t) {
-    var validMorphs = [];
-    var morphDict = this.points.morphTargetDictionary;
-    for(var k in morphDict) {
-      if(k.indexOf('morphPadding') < 0) {
-        validMorphs.push(morphDict[k]);
-      }
-    }
-    validMorphs.sort();
-    var l = validMorphs.length-1;
-    var scaledt = t*l+1;
-    var index = Math.floor(scaledt);
-    for (i=0;i<validMorphs.length;i++) {
-      this.points.morphTargetInfluences[validMorphs[i]] = 0;
-    }
-    var lastIndex = index - 1;
-    var leftover = scaledt - index;
-    if (lastIndex >= 0) {
-      this.points.morphTargetInfluences[lastIndex] = 1 - leftover;
-    }
-    this.points.morphTargetInfluences[index] = leftover;
-    this._time = t;
-  });
-
   this.addData = addData;
   this.createPoints = createPoints;
+  this.resetData = resetData;
   this.renderer = renderer;
   this.scene = scene;
 
