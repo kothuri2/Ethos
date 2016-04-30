@@ -2,12 +2,12 @@
 "Toyota Camry" : {
                       "Plant_1" : {
                              "Name":"Fuji Heavy Industries - SIA Assembly",
-                             "Location":"Lafayette, IN",
+                             "Location":"Lafayette, IN, US",
                              "LatLong":"40.3773138,-86.7990629",
                              "Environment_Rating" : "9/10",
                              "Community_Involvement":"7/10",
-                             "Num_Employees" :"",
-                             "Size" : "",
+                             "Num_Employees" :"2230",
+                             "Size" : "3,360,000m2",
                         },
                         
                         "Plant_2" : {
@@ -16,8 +16,8 @@
                         "LatLong":"38.2610322,-84.5317628",
                         "Environment_Rating" : "9/10",
                         "Community_Involvement":"8/10",
-                        "Num_Employees" :"",
-                        "Size" : "",
+                        "Num_Employees" :"7000",
+                        "Size" : "7.5 million sq. ft.",
                         },
                         
                         "Plant_3" : {
