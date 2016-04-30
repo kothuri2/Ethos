@@ -132,8 +132,8 @@
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"",
-                             "Fact_Size" : "",
-                             "Land_Size" : "",
+                             "Size" : "",
+
                           },
                        "Plant_3" : {
                              "Name":"Delco Remy",
@@ -141,9 +141,9 @@
                              "LatLong":"40.047,-85.721",
                              "Environment_Rating" : "5/10",
                              "Community_Involvement":"2/10",
-                             "Num_Employees" :"",
-                             "Fact_Size" : "",
-                             "Land_Size" : "",
+                             "Num_Employees" :"7229",
+                             "Size" : "255-acres",
+                             
                           },
                         "Plant_4" : {
                              "Name":"Warren Transmission",
@@ -152,8 +152,8 @@
                              "Environment_Rating" : "7/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"581",
-                             "Fact_Size" : "2100000 sq feet",
-                             "Land_Size" : "",
+                             "Size" : "2100000 sq feet",
+                             
                           },
                         "Plant_5" : {
                              "Name":"Pontiac Metal Center",
@@ -162,8 +162,7 @@
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"7/10",
                              "Num_Employees" :"491",
-                             "Fact_Size" : "1250000 sq feet",
-                             "Land_Size" : "",
+                             "Size" : "1250000 sq feet",
                           }
 }                       
 },
@@ -176,7 +175,7 @@
                              "Environment_Rating" : "6/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "1061",
-                             "Fact_size" : "97 acres",
+                             "Size" : "97 acres",
                              
                         },
                         "Plant_2" : {
@@ -186,7 +185,7 @@
                              "Environment_Rating" : "6/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "443",
-                             "Fact_size" : "318,500 square feet",
+                             "Size" : "318,500 square feet",
                              
                         },
                         "Plant_3" : {
@@ -196,7 +195,7 @@
                              "Environment_Rating" : "4/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "1780",
-                             "Fact_size" : "111 acres",
+                             "Size" : "111 acres",
                              
                         }
   }
@@ -210,7 +209,7 @@
                              "Environment_Rating" : "5/10",
                              "Community_Involvement":"6/10",
                              "Num_Employees" : "4500",
-                             "Fact_size" : "905 acres",
+                             "Size" : "905 acres",
                              
                         },
                         "Plant_2" : {
@@ -220,7 +219,7 @@
                              "Environment_Rating" : "5/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "856",
-                             "Fact_size" : "1,165,212 sq ft",
+                             "Size" : "1,165,212 sq ft",
                              
                         },
                         "Plant_3" : {
@@ -230,7 +229,7 @@
                              "Environment_Rating" : "7/10",
                              "Community_Involvement":"4/10",
                              "Num_Employees" : "1250",
-                             "Fact_size" : "",
+                             "Size" : "",
                              
                         }
   }
@@ -244,7 +243,7 @@
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "264",
-                             "Fact_size" : "471,000 sq. ft.",
+                             "Size" : "471,000 sq. ft.",
                              
                         },
                         "Plant_2" : {
@@ -254,7 +253,7 @@
                              "Environment_Rating" : "5/10",
                              "Community_Involvement":"5/10",
                              "Num_Employees" : "2820",
-                             "Fact_size" : "159 acres",
+                             "Size" : "159 acres",
                              
                         },
                         "Plant_3" : {
@@ -264,7 +263,7 @@
                              "Environment_Rating" : "6/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "3900",
-                             "Fact_size" : "716 acres",
+                             "Size" : "716 acres",
                              
                         },
                         "Plant_4" : {
@@ -274,7 +273,7 @@
                              "Environment_Rating" : "/10",
                              "Community_Involvement":"/10",
                              "Num_Employees" : "2957",
-                             "Fact_Size" : "1.2 million square feet",
+                             "Size" : "1.2 million square feet",
                              
                         },
                         "Plant_5" : {
@@ -284,7 +283,7 @@
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"8/10",
                              "Num_Employees" : "2900",
-                             "Fact_Size" : "10 million square feet",
+                             "Size" : "10 million square feet",
                             
                         }
   }
@@ -299,8 +298,7 @@
                              "Environment_Rating" : "7/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"581",
-                             "Fact_Size" : "2100000 sq feet",
-                             "Land_Size" : "",
+                             "Size" : "2100000 sq feet",
                           },
                         "Plant_2" : {
                              "Name":"Pontiac Metal Center",
@@ -309,8 +307,8 @@
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"7/10",
                              "Num_Employees" :"491",
-                             "Fact_Size" : "1250000 sq feet",
-                             "Land_Size" : "",
+                             "Size" : "1250000 sq feet",
+                             
                           },
                         "Plant_3" : {
                              "Name":"Lansing Delta Township",
@@ -319,7 +317,7 @@
                              "Environment_Rating" : "7/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"3486",
-                             "Fact_Size" : "3.4 million sq. ft.",
+                             "Size" : "3.4 million sq. ft.",
                              
                           },
                           "Plant_4" : {
@@ -329,7 +327,7 @@
                              "Environment_Rating" : "5/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"",
-                             "Fact_Size" : "",
+                             "Size" : "",
                              
                           },
                         "Plant_5" : {
@@ -339,7 +337,7 @@
                              "Environment_Rating" : "6/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"3500",
-                             "Fact_Size" : " 4,900,000 sq. ft.",
+                             "Size" : " 4,900,000 sq. ft.",
                              
                           }
                        
