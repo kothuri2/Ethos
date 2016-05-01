@@ -21,8 +21,8 @@
         #header{
             color: whitesmoke;
             margin-left:20px;
-            margin-top:20px;
-            font-size:26pt;
+            margin-top:25px;
+            font-size:10pt;
             font-family: "Roboto", "Sans Serif";
             position:relative;
             z-index: 100;
@@ -30,7 +30,7 @@
         #search{
             position:absolute;
             left: 20px;
-            top: 80px;
+            top: 60px;
             z-index: 100;
         }
         #data{
@@ -189,11 +189,22 @@
             margin-top: 150px;
         }
 
+        #description {
+            color: #ffffff;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            padding: 10px;
+            z-index:1;
+            text-align: center;
+        }
+
+
     </style>
 </head>
 <body>
 <div id="header">
-    Ethos
+    Start searching for a car model here..
 </div>
 
 <div id="search">
@@ -263,6 +274,10 @@
             </ol></li>
 
     </ol>
+</div>
+
+<div id="description">
+    <img src="http://i.imgur.com/UU9UMlu.gif" width="1000">
 </div>
 
 <div id="container"></div>
