@@ -1,12 +1,9 @@
-<!DOCTYPE HTML>
+
 <html lang="en">
 <head>
     <title>WebGL Globe</title>
     <meta charset="utf-8">
     <style type="text/css">
-
-        @import url(http://fonts.googleapis.com/css?family=Roboto);
-
         html {
             height: 100%;
         }
@@ -15,99 +12,11 @@
             padding: 0;
             background: #000000 url(loading.gif) center center no-repeat;
             color: #ffffff;
-            font-family: "Roboto", "Sans Serif";
-            font-size: 13;
+            font-family: sans-serif;
+            font-size: 13px;
             line-height: 20px;
             height: 100%;
         }
-
-        #header{
-            color: white;
-            margin-left:20px;
-            margin-top:20px;
-            font-size:26pt;
-            font-family: "Roboto", "Sans Serif";
-            position:absolute;
-            z-index:100;
-        }
-
-        #search{
-            position:absolute;
-            left: 20px;
-            top: 55px;
-            z-index:100;
-        }
-
-        #data{
-            position:absolute;
-            top:125px;
-            background-color: rgba(256,256,256,0.3);
-            left:20px;
-            padding: 0 10px;
-            border-radius: 3px;
-            z-index:100;
-
-
-        }
-
-        p{
-            font-size:18pt;
-        }
-
-        .search-box {
-            -webkit-transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
-            transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
-            width: 40px;
-            height: 40px;
-            border-radius: 20px;
-            border: none;
-            cursor: pointer;
-            background: #ebebeb;
-        }
-        .search-box + label .search-icon {
-            color: black;
-        }
-        .search-box:hover {
-            color: white;
-            background: #c8c8c8;
-            box-shadow: 0 0 0 5px #3d4752;
-        }
-        .search-box:hover + label .search-icon {
-            color: white;
-        }
-        .search-box:focus {
-            -webkit-transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s, background 0.6s;
-            transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s, background 0.6s;
-            border: none;
-            outline: none;
-            box-shadow: none;
-            padding-left: 15px;
-            cursor: text;
-            width: 300px;
-            border-radius: auto;
-            background: #ebebeb;
-            color: black;
-        }
-        .search-box:focus + label .search-icon {
-            color: black;
-        }
-        .search-box:not(:focus) {
-            text-indent: -5000px;
-        }
-
-        #search-submit {
-            position: relative;
-            left: -5000px;
-        }
-
-        .search-icon {
-            position: relative;
-            left: -30px;
-            color: white;
-            cursor: pointer;
-        }
-
-
         #info {
             font-size: 11px;
             position: absolute;
@@ -174,186 +83,36 @@
             left: 20px;
             background: url(ce.png);
         }
-
-        /* Minimal css for clickable pure CSS collapsible tree menu */
-        /* As specific as possible to prevent interference with other code */
-
-        #menutree li {
-            list-style: none;          /* all list item li dots invisible */
-        }
-
-<<<<<<< HEAD
-  <div id="currentInfo">
-    <span id="year2016" class="year">2016</span>
-
-=======
-        li .menu_label + input[type=checkbox] {
-            opacity: 0;             /* checkboxes invisible and use no space */
-        }                        /* display: none; is better but fails in ie8 */
->>>>>>> 0abde2be577ddeab4f68797802e244de02c0d2ad
-
-        li .menu_label {
-            cursor: pointer;        /* cursor changes when you mouse over this class */
-        }                         /* could add the many user-select: none; commands here */
-
-        li .menu_label + input[type=checkbox] + ol > li
-        {
-            display: none;         /* prevents sublists below unchecked labels from displaying */
-        }
-
-<<<<<<< HEAD
-=======
-        li .menu_label + input[type=checkbox]:checked + ol > li
-        {
-            display: block;         /* display submenu on click */
-        }
->>>>>>> 0abde2be577ddeab4f68797802e244de02c0d2ad
-
-        a{
-            float:right;
-            margin-top: 3px;
-        }
-
-
-
-
     </style>
 </head>
 <body>
-<div id="header">
-    Ethos
-</div>
-<div id="search">
-    <form class="search-container" action="//llamaswill.tumblr.com/search">
-        <input id="search-box" type="text" class="search-box" name="q" placeholder="Search something.."/>
-        <label for="search-box"><span class="glyphicon glyphicon-search search-icon"></span></label>
-        <input type="submit" id="search-submit" />
-    </form>
-</div>
-
-<div id="data">
-    <a href="#" onclick="hide('data')">X</a>
-    <p>Model Name</p>
-    <ol id="menutree">
-        <li>
-
-            <label class="menu_label" for="c1">Menu Gen14 Am0a1</label>
-            <input type="checkbox" id="c1" />                             <!-- input must follow label for safari -->
-            <ol>
-                <li>
-                    <label for="c2" class="menu_label">Menu Am1a1</label>
-                    <input type="checkbox" id="c2" />
-                    <ol>
-                        <li class="page"><a href="#">Page Ap1a1</a></li>
-                        <li class="page"><a href="#">Page Ap1a2</a></li>
-                        <li class="page"><a href="#">Page Ap1a3</a></li>
-                    </ol>
-                </li>
-                <li>
-                    <label for="c3" class="menu_label">Menu Am1b1</label>
-                    <input type="checkbox" id="c3" />
-                    <ol>
-                        <li class="page"><a href="#">Page Ap1b1</a></li>
-
-                        <li>
-                            <label for="c4" class="menu_label">Menu Am2b1 </label>
-                            <input type="checkbox" id="c4" />
-                            <ol>
-                                <li class="page"><a href="#">Page Ap2b1</a></li>
-                            </ol></li>
-                    </ol></li>
-            </ol></li>
-
-        <li>
-            <label class="menu_label" for="c5">Menu Bm0a1</label>
-            <input type="checkbox" id="c5" />
-            <ol>
-                <li>
-                    <label for="c6" class="menu_label">Menu Bm1a1</label>
-                    <input type="checkbox" id="c6" />
-                    <ol>
-                        <li class="page"><a href="#">Page Bp1a1</a></li>
-                    </ol>
-                </li>
-                <li>
-                    <label for="c7" class="menu_label">Menu Bm1b1</label>
-                    <input type="checkbox" id="c7" />
-                    <ol>
-                        <li class="page"><a href="#">Page Bp1b1</a></li>
-                        <li>
-                            <label for="c8" class="menu_label">Menu Bm2b1</label>
-                            <input type="checkbox" id="c8" />
-                            <ol>
-                                <li class="page"><a href="#">Page Bp2b1</a></li>
-                            </ol></li>
-                    </ol></li>
-            </ol></li>
-
-    </ol>
-</div>
 
 <div id="container"></div>
-<!--
+
 <div id="info">
-  <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Powered by the Ethos Team <span class="bull">&bull;</span>
+    <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Powered by the Ethos Team <span class="bull">&bull;</span>
 </div>
 
 <div id="currentInfo">
-  <span id="year1990" class="year">1990</span>
-  <span id="year1995" class="year">1995</span>
-  <span id="year2000" class="year">2000</span>
+    <span id="year2016" class="year">2016</span>
+
+
 </div>
 
 <div id="title">
-  Models and Locations
+    Models and Locations
 </div>
 
-<a id="ce" href="http://www.chromeexperiments.com/globe">
-  <span>This is a Chrome Experiment</span>
-</a>
--->
+
 <script type="text/javascript" src="Detector.js"></script>
 <script type="text/javascript" src="three.min.js"></script>
 <script type="text/javascript" src="Tween.js"></script>
 <script type="text/javascript" src="globe.js"></script>
 <script type="text/javascript">
-
-    function show(target) {
-        document.getElementById(target).style.display = 'block';
-    }
-
-    function hide(target) {
-        document.getElementById(target).style.display = 'none';
-    }
-
-    document.addEventListener("touchstart", function(){}, true);
-
     if(!Detector.webgl){
         Detector.addGetWebGLMessage();
     } else {
-<<<<<<< HEAD
-
-      var years = ['2016'];
-      var container = document.getElementById('container');
-      var globe = new DAT.Globe(container);
-
-      console.log(globe);
-      var i, tweens = [];
-
-      var settime = function(globe, t) {
-        return function() {
-          new TWEEN.Tween(globe).to({time: t/years.length},500).easing(TWEEN.Easing.Cubic.EaseOut).start();
-          var y = document.getElementById('year'+years[t]);
-          if (y.getAttribute('class') === 'year active') {
-            return;
-          }
-          var yy = document.getElementsByClassName('year');
-          for(i=0; i<yy.length; i++) {
-            yy[i].setAttribute('class','year');
-          }
-          y.setAttribute('class', 'year active');
-=======
-        var years = ['1990','1995','2000'];
+        var years = ['2016'];
         var container = document.getElementById('container');
         var globe = new DAT.Globe(container);
         console.log(globe);
@@ -371,7 +130,6 @@
                 }
                 y.setAttribute('class', 'year active');
             };
->>>>>>> 0abde2be577ddeab4f68797802e244de02c0d2ad
         };
         for(var i = 0; i<years.length; i++) {
             var y = document.getElementById('year'+years[i]);
