@@ -94,7 +94,7 @@
 </div>
 
 <div id="currentInfo">
-    <span id="year2016" class="year">2016</span>
+    <span id="year" class="year"></span>
 
 
 </div>
@@ -112,7 +112,7 @@
     if(!Detector.webgl){
         Detector.addGetWebGLMessage();
     } else {
-        var years = ['2016'];
+        var years = [''];
         var container = document.getElementById('container');
         var globe = new DAT.Globe(container);
         console.log(globe);
