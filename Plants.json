@@ -108,6 +108,15 @@
                              "Num_Employees" :"1300",
                              "Size" : "",
                              "info":"It will be closed by 2017",
+                        },
+                        "Plant_6" : {
+                             "Name":"Performance Build Center in Wixom",
+                             "Location":"Wixom, Michigan, United States",
+                             "LatLong":"",
+                             "Community_Involvement":"5/10",
+                             "Environment_Rating" : "2/10",
+                             "Num_Employees" :"29",
+                             "Size" : "100,000 sq. ft.",
                         }
 }
 },
@@ -167,6 +176,40 @@
 }                       
 },
 {
+  "Cadillac ELR":""{
+                        "Plant_1" : {
+                             "Name":"Detroit-Hamtramck",
+                             "Location":"Detroit, Michigan, US",
+                             "LatLong":"42.348,-83.053",
+                             "Environment_Rating" : "7/10",
+                             "Community_Involvement":"7/10",
+                             "Num_Employees" : "1600",
+                             "Size" : "4.1 million",
+                             
+                        },
+                        "Plant_2" : {
+                             "Name":"Bay City Powertrain",
+                             "Location":"Bay City, Michigan, US",
+                             "LatLong":"43.606,83.878",
+                             "Environment_Rating" : "6/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" : "394",
+                             "Size" : "975,000 sq. ft.",
+                             
+                        },
+                        "Plant_3" : {
+                             "Name":"Brownstown Battery",
+                             "Location":"Brownstown Charter Twp., Michigan, US",
+                             "LatLong":"42.156,-83.240",
+                             "Environment_Rating" : "6/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" : "100",
+                             "Size" : "479,000 square feet",
+                             
+                        }
+  }
+},
+{
   "Cadillac CTS":""{
                         "Plant_1" : {
                              "Name":"Rochester Operations",
@@ -196,7 +239,15 @@
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "1780",
                              "Size" : "111 acres",
-                             
+                        },
+                        "Plant_3" : {
+                             "Name":"Tonawanda Engine Plant",
+                             "Location":"Buffalo, New York, US",
+                             "LatLong":"42.962,-78.914",
+                             "Environment_Rating" : "6/10",
+                             "Community_Involvement":"2/10",
+                             "Num_Employees" : "1695",
+                             "Size" : "111 acres",
                         }
   }
 },
