@@ -262,6 +262,9 @@
 </div>
 
 <div id="container"></div>
+<div id="currentInfo">
+    <span id="year" class="year"></span>
+</div>
 <!--
 <div id="info">
   <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Powered by the Ethos Team <span class="bull">&bull;</span>
@@ -293,7 +296,7 @@
     if(!Detector.webgl){
         Detector.addGetWebGLMessage();
     } else {
-        var years = ['1990','1995','2000'];
+        var years = [''];
         var container = document.getElementById('container');
         var globe = new DAT.Globe(container);
         console.log(globe);

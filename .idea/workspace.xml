@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06ae9b0e-64a0-4574-aae9-a46d8b0e5fd6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globe/globe/index-w-searchbar.html" afterPath="$PROJECT_DIR$/globe/globe/index-w-searchbar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globe/globe/index.html" afterPath="$PROJECT_DIR$/globe/globe/index.html" />
     </list>
     <ignored path="Ethos.iws" />
@@ -23,12 +24,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/globe/globe/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="487">
+              <caret line="153" column="5" selection-start-line="106" selection-start-column="31" selection-end-line="153" selection-end-column="5" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#2713#2759#0" expanded="false" />
+                <element signature="e#2998#3588#0" expanded="false" />
+                <element signature="e#3634#3777#0" expanded="false" />
+                <element signature="e#3952#4561#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index-w-searchbar.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/globe/globe/index-w-searchbar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="294" column="64" selection-start-line="294" selection-start-column="64" selection-end-line="294" selection-end-column="64" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#9461#9533#0" expanded="false" />
+                <element signature="e#9560#9631#0" expanded="false" />
+                <element signature="e#9720#9766#0" expanded="false" />
+                <element signature="e#10005#10595#0" expanded="false" />
+                <element signature="e#10641#10784#0" expanded="false" />
+                <element signature="e#10959#11568#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,6 +70,7 @@
       <list>
         <option value="$PROJECT_DIR$/globe/globe/globe.js" />
         <option value="$PROJECT_DIR$/globe/globe/index.html" />
+        <option value="$PROJECT_DIR$/globe/globe/index-w-searchbar.html" />
       </list>
     </option>
   </component>
@@ -52,8 +80,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="53" />
+    <option name="y" value="31" />
     <option name="width" value="1440" />
     <option name="height" value="828" />
   </component>
@@ -235,15 +262,15 @@
       <workItem from="1462052645564" duration="1461000" />
       <workItem from="1462055725352" duration="3075000" />
       <workItem from="1462136667360" duration="826000" />
-      <workItem from="1462138140654" duration="2755000" />
+      <workItem from="1462138140654" duration="2996000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12297000" />
+    <option name="totallyTimeSpent" value="12538000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="53" width="1440" height="828" extended-state="0" />
+    <frame x="0" y="31" width="1440" height="828" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18888889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -286,7 +313,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#2713#2759#0" expanded="false" />
+            <element signature="e#2998#3588#0" expanded="false" />
+            <element signature="e#3634#3777#0" expanded="false" />
+            <element signature="e#3952#4561#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -294,7 +327,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2460">
           <caret line="164" column="13" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#2713#2759#0" expanded="false" />
+            <element signature="e#2998#3588#0" expanded="false" />
+            <element signature="e#3634#3777#0" expanded="false" />
+            <element signature="e#3952#4561#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -310,7 +349,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#2713#2759#0" expanded="false" />
+            <element signature="e#2998#3588#0" expanded="false" />
+            <element signature="e#3634#3777#0" expanded="false" />
+            <element signature="e#3952#4561#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -325,7 +370,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#2713#2759#0" expanded="false" />
+            <element signature="e#2998#3588#0" expanded="false" />
+            <element signature="e#3634#3777#0" expanded="false" />
+            <element signature="e#3952#4561#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -409,9 +460,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/globe/globe/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="487">
+          <caret line="153" column="5" selection-start-line="106" selection-start-column="31" selection-end-line="153" selection-end-column="5" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#2713#2759#0" expanded="false" />
+            <element signature="e#2998#3588#0" expanded="false" />
+            <element signature="e#3634#3777#0" expanded="false" />
+            <element signature="e#3952#4561#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/globe/globe/index-w-searchbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="294" column="64" selection-start-line="294" selection-start-column="64" selection-end-line="294" selection-end-column="64" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#9461#9533#0" expanded="false" />
+            <element signature="e#9560#9631#0" expanded="false" />
+            <element signature="e#9720#9766#0" expanded="false" />
+            <element signature="e#10005#10595#0" expanded="false" />
+            <element signature="e#10641#10784#0" expanded="false" />
+            <element signature="e#10959#11568#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
