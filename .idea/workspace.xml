@@ -43,17 +43,17 @@
       <file leaf-file-name="index-w-searchbar.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/globe/globe/index-w-searchbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="188" column="29" selection-start-line="188" selection-start-column="29" selection-end-line="188" selection-end-column="29" />
+            <state relative-caret-position="150">
+              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
               <folding>
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#9517#9589#0" expanded="false" />
-                <element signature="e#9616#9687#0" expanded="false" />
-                <element signature="e#9776#9822#0" expanded="false" />
-                <element signature="e#10061#10651#0" expanded="false" />
-                <element signature="e#10697#10840#0" expanded="false" />
-                <element signature="e#11015#11624#0" expanded="false" />
+                <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#9865#9937#0" expanded="false" />
+                <element signature="e#9964#10035#0" expanded="false" />
+                <element signature="e#10124#10170#0" expanded="false" />
+                <element signature="e#10409#10999#0" expanded="false" />
+                <element signature="e#11045#11188#0" expanded="false" />
+                <element signature="e#11363#11972#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -79,8 +79,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="245" />
-    <option name="y" value="16" />
+    <option name="x" value="237" />
     <option name="width" value="1369" />
     <option name="height" value="826" />
   </component>
@@ -214,15 +213,15 @@
       <workItem from="1462052645564" duration="1461000" />
       <workItem from="1462055725352" duration="3075000" />
       <workItem from="1462136667360" duration="826000" />
-      <workItem from="1462138140654" duration="5418000" />
+      <workItem from="1462138140654" duration="6285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14960000" />
+    <option name="totallyTimeSpent" value="15827000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="245" y="16" width="1369" height="826" extended-state="0" />
+    <frame x="237" y="0" width="1369" height="826" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18888889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -444,17 +443,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/globe/globe/index-w-searchbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="188" column="29" selection-start-line="188" selection-start-column="29" selection-end-line="188" selection-end-column="29" />
+        <state relative-caret-position="150">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
           <folding>
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#9517#9589#0" expanded="false" />
-            <element signature="e#9616#9687#0" expanded="false" />
-            <element signature="e#9776#9822#0" expanded="false" />
-            <element signature="e#10061#10651#0" expanded="false" />
-            <element signature="e#10697#10840#0" expanded="false" />
-            <element signature="e#11015#11624#0" expanded="false" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#9865#9937#0" expanded="false" />
+            <element signature="e#9964#10035#0" expanded="false" />
+            <element signature="e#10124#10170#0" expanded="false" />
+            <element signature="e#10409#10999#0" expanded="false" />
+            <element signature="e#11045#11188#0" expanded="false" />
+            <element signature="e#11363#11972#0" expanded="false" />
           </folding>
         </state>
       </provider>
