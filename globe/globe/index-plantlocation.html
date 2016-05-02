@@ -31,7 +31,7 @@
         }
 
         #currentInfo {
-            width: 270px;
+            width: 100px;
             position: absolute;
             left: 20px;
             top: 63px;
@@ -40,6 +40,7 @@
 
             border-top: 1px solid rgba(255,255,255,0.4);
             padding: 10px;
+
         }
 
         a {
@@ -90,11 +91,12 @@
 
         .dropdown-content {
             width:450px;
+            height:300px;
             font-family: sans-serif;
             display: none;
             position: absolute;
             background-color: #f9f9f9;
-            min-width: 160px;
+
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
             color: black;
@@ -102,6 +104,8 @@
             text-decoration: none;
             font-size: 15px;
             text-align:left;
+
+            overflow:auto;
         }
 
         #ce span {
@@ -132,7 +136,7 @@
 <div id="container"></div>
 
 <div id="info">
-    <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Created by the Google Data Arts Team <span class="bull">&bull;</span> Data acquired from <a href="http://sedac.ciesin.columbia.edu/gpw/">SEDAC</a>
+    <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Created by Ethos team <span class="bull">&bull;</span> Data acquired from <a href="http://sedac.ciesin.columbia.edu/gpw/">SEDAC</a>
 </div>
 
 <a id="ce" href="https://github.com/kothuri2/Ethos">
@@ -140,6 +144,7 @@
 </a>
 
 <div id="currentInfo">
+    <div>
     <span id="year1990" class="year"><p>Toyota Camry</p><div id="placeholder" class="dropdown-content"><b>Plant1</b><br>
 
         Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US<br>Environment_Rating: 9/10<br>
@@ -148,6 +153,18 @@
     </div></span>
     <span id="year1995" class="year"><p>Chevrolot Corvette</p><div class="dropdown-content">something</div></span>
     <span id="year2000" class="year"><p>Chevrolot Traverse</p><div class="dropdown-content">something</div></span>
+    </div>
+    <div>
+    <span id="year2005" class="year"><p>Cadillac ELR</p><div class="dropdown-content"><b>Plant1</b><br>
+
+        Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US<br>Environment_Rating: 9/10<br>
+        Community_Involvement: 7/10<br>Num_Employees: 2230<br>Size: 3,360,000m2
+
+
+    </div></span>
+    <span id="year2010" class="year"><p>Cadillac CTS</p><div class="dropdown-content">something</div></span>
+    <span id="year2015" class="year"><p>Chevrolet Cruze</p><div class="dropdown-content">something</div></span>
+    </div>
 </div>
 
 <div id="title">
