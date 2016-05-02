@@ -89,6 +89,7 @@
         }
 
         .dropdown-content {
+            width:450px;
             font-family: sans-serif;
             display: none;
             position: absolute;
@@ -104,17 +105,23 @@
         }
 
         #ce span {
-            display: none;
+            color:white;
+            z-index:1;
+            left:110px;
+            bottom:50px;
+            position: absolute;
+            font-size:24pt;
+
         }
 
         #ce {
-            width: 107px;
-            height: 55px;
+            width: 120px;
+            height: 132px;
             display: block;
             position: absolute;
             bottom: 15px;
-            left: 20px;
-            background: url(ce.png);
+            left: 10px;
+            background: url(logo.gif);
         }
 
 
@@ -128,8 +135,17 @@
     <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Created by the Google Data Arts Team <span class="bull">&bull;</span> Data acquired from <a href="http://sedac.ciesin.columbia.edu/gpw/">SEDAC</a>
 </div>
 
+<a id="ce" href="https://github.com/kothuri2/Ethos">
+    <span>ETHOS</span>
+</a>
+
 <div id="currentInfo">
-    <span id="year1990" class="year"><p>Toyota Camry</p><div class="dropdown-content"><b>Plant1</b><br>Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US</div></span>
+    <span id="year1990" class="year"><p>Toyota Camry</p><div id="placeholder" class="dropdown-content"><b>Plant1</b><br>
+
+        Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US<br>Environment_Rating: 9/10<br>
+        Community_Involvement: 7/10<br>Num_Employees: 2230<br>Size: 3,360,000m2
+
+    </div></span>
     <span id="year1995" class="year"><p>Chevrolot Corvette</p><div class="dropdown-content">something</div></span>
     <span id="year2000" class="year"><p>Chevrolot Traverse</p><div class="dropdown-content">something</div></span>
 </div>
@@ -198,8 +214,18 @@
             }
         };
         xhr.send(null);
+
+
     }
 
+    /*
+    var xhReq = new XMLHttpRequest();
+    xhReq.open("GET", 'plantlocation.json', true);
+    xhReq.send(null);
+    var jsonObject = JSON.parse(xhReq.responseText);
+
+    document.getElementById("placeholder").innerHTML="Name: "+jsonObject[0]+"</br>"+"Name: " +jsonObject[0].Plant_2.Name;
+    */
 </script>
 
 </body>
