@@ -1,5 +1,5 @@
 [{
-"Toyota Camry" : {
+"Toyota Camry" : [{
                       "Plant_1" : {
                              "Name":"Fuji Heavy Industries - SIA Assembly",
                              "Location":"Lafayette, IN, US",
@@ -7,7 +7,7 @@
                              "Environment_Rating" : "9/10",
                              "Community_Involvement":"7/10",
                              "Num_Employees" :"2230",
-                             "Size" : "3,360,000m2",
+                             "Size" : "3,360,000m2"
                         },
                         
                         "Plant_2" : {
@@ -17,7 +17,7 @@
                         "Environment_Rating" : "9/10",
                         "Community_Involvement":"8/10",
                         "Num_Employees" :"7000",
-                        "Size" : "7.5 million sq. ft.",
+                        "Size" : "7.5 million sq. ft."
                         },
                         
                         "Plant_3" : {
@@ -27,7 +27,7 @@
                         "Environment_Rating" : "8/10",
                         "Community_Involvement":"6/10",
                         "Num_Employees" :"5249",
-                        "Size" : "940,000 m2",
+                        "Size" : "940,000 m2"
                         },
                         
                         "Plant_4" : {
@@ -38,7 +38,7 @@
                         "Environment_Rating" : "6/10",
                         "Community_Involvement":"2/10",
                         "Num_Employees" :"1300",
-                        "Size" : "270 acres",
+                        "Size" : "270 acres"
                         },
                         
                         "Plant_5" : {
@@ -48,14 +48,12 @@
                         "Environment_Rating" : "7/10",
                         "Community_Involvement":"2/10",
                         "Num_Employees" :"500",
-                        "Size" : "618,000 m2",
+                        "Size" : "618,000 m2"
                         }
                         
-}
-},
-
+}]},
 {
-"Chevrolot Corvette" : {
+"Chevrolot Corvette" : [{
                           "Plant_1" : {
                              "Name":"Bowling Green Assembly Plant",
                              "Location":"Bowling Green, Kentucky",
@@ -64,7 +62,7 @@
                              "Community_Involvement":"9/10",
                              "Num_Employees" :"918",
                              "Fact_Size" : "1000000 sq feet",
-                             "Land_Size" : "212 acres",
+                             "Land_Size" : "212 acres"
                           },
                           
                            "Plant_2" : {
@@ -75,7 +73,7 @@
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "1013",
                              "Fact_size" : "2600000 sq feet",
-                             "Land_Size" : "272 acres",
+                             "Land_Size" : "272 acres"
                         },
                         
                          "Plant_3" : {
@@ -86,7 +84,7 @@
                              "Community_Involvement":"9/10",
                              "Num_Employees" :"1587",
                              "Fact_Size" : "2600000 sq feet",
-                             "Land_Size" : "495 acres",
+                             "Land_Size" : "495 acres"
                         },
                         
                         "Plant_4" : {
@@ -96,7 +94,7 @@
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"7/10",
                              "Num_Employees" : "491",
-                             "Fact_Size" : "1250000 sq feet",
+                             "Fact_Size" : "1250000 sq feet"
                              
                         },
                         
@@ -107,7 +105,9 @@
                              "Environment_Rating" : "7/10",
                              "Community_Involvement" : "8/10",
                              "Num_Employees" :"1300",
-                             "Size" : "39.61 Hectares",
+                             "Size" : "",
+                             "info":"It will be closed by 2017",
+                             "Size" : "39.61 Hectares"
                         },
                         "Plant_6" : {
                              "Name":"Performance Build Center in Wixom",
@@ -116,9 +116,9 @@
                              "Environment_Rating":"5/10",
                              "Community_Involvement" : "2/10",
                              "Num_Employees" :"29",
-                             "Size" : "100,000 sq. ft.",
+                             "Size" : "100,000 sq. ft."
                         }
-}
+}]
 },
 {
 "Chevrolot Traverse" : {
@@ -131,7 +131,7 @@
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"2643",
                              "Fact_Size" : "6900000 sq feet",
-                             "Land_Size" : "2,100 acres",
+                             "Land_Size" : "2,100 acres"
                           },
                         
                         "Plant_2" : {
@@ -140,9 +140,10 @@
                              "LatLong":"46.909,-96.808",
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"2/10",
+                             "Num_Employees" :"",
+                             "Size" : "",
                              "Num_Employees" :"2400",
-                             "Size" : "202 Acres",
-
+                             "Size" : "202 Acres"
                           },
                        "Plant_3" : {
                              "Name":"Delco Remy",
@@ -151,7 +152,7 @@
                              "Environment_Rating" : "5/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"7229",
-                             "Size" : "255-acres",
+                             "Size" : "255-acres"
                              
                           },
                         "Plant_4" : {
@@ -161,7 +162,7 @@
                              "Environment_Rating" : "7/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"581",
-                             "Size" : "2100000 sq feet",
+                             "Size" : "2100000 sq feet"
                              
                           },
                         "Plant_5" : {
@@ -171,12 +172,12 @@
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"7/10",
                              "Num_Employees" :"491",
-                             "Size" : "1250000 sq feet",
+                             "Size" : "1250000 sq feet"
                           }
 }                       
 },
 {
-  "Cadillac ELR":""{
+  "Cadillac ELR": [{
                         "Plant_1" : {
                              "Name":"Detroit-Hamtramck",
                              "Location":"Detroit, Michigan, US",
@@ -184,7 +185,7 @@
                              "Environment_Rating" : "7/10",
                              "Community_Involvement":"7/10",
                              "Num_Employees" : "1600",
-                             "Size" : "4.1 million",
+                             "Size" : "4.1 million"
                              
                         },
                         "Plant_2" : {
@@ -194,7 +195,7 @@
                              "Environment_Rating" : "6/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "394",
-                             "Size" : "975,000 sq. ft.",
+                             "Size" : "975,000 sq. ft."
                              
                         },
                         "Plant_3" : {
@@ -204,13 +205,13 @@
                              "Environment_Rating" : "6/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "100",
-                             "Size" : "479,000 square feet",
+                             "Size" : "479,000 square feet"
                              
                         }
-  }
+  }]
 },
 {
-  "Cadillac CTS":""{
+  "Cadillac CTS": [{
                         "Plant_1" : {
                              "Name":"Rochester Operations",
                              "Location":"Rochester, New York, US",
@@ -218,7 +219,7 @@
                              "Environment_Rating" : "6/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "1061",
-                             "Size" : "97 acres",
+                             "Size" : "97 acres"
                              
                         },
                         "Plant_2" : {
@@ -228,7 +229,7 @@
                              "Environment_Rating" : "6/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "443",
-                             "Size" : "318,500 square feet",
+                             "Size" : "318,500 square feet"
                              
                         },
                         "Plant_3" : {
@@ -238,7 +239,7 @@
                              "Environment_Rating" : "4/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "1780",
-                             "Size" : "111 acres",
+                             "Size" : "111 acres"
                         },
                         "Plant_3" : {
                              "Name":"Tonawanda Engine Plant",
@@ -247,12 +248,12 @@
                              "Environment_Rating" : "6/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "1695",
-                             "Size" : "111 acres",
+                             "Size" : "111 acres"
                         }
-  }
+  }]
 },
 {
-  "Chevrolet Cruze":""{
+  "Chevrolet Cruze": [{
                         "Plant_1" : {
                              "Name":"Lordstown Complex",
                              "Location":"Warren, Ohio, US",
@@ -260,7 +261,7 @@
                              "Environment_Rating" : "5/10",
                              "Community_Involvement":"6/10",
                              "Num_Employees" : "4500",
-                             "Size" : "905 acres",
+                             "Size" : "905 acres"
                              
                         },
                         "Plant_2" : {
@@ -270,7 +271,7 @@
                              "Environment_Rating" : "5/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "856",
-                             "Size" : "1,165,212 sq ft",
+                             "Size" : "1,165,212 sq ft"
                              
                         },
                         "Plant_3" : {
@@ -280,13 +281,13 @@
                              "Environment_Rating" : "7/10",
                              "Community_Involvement":"4/10",
                              "Num_Employees" : "1250",
-                             "Size" : "39.61 Hectares",
+                             "Size" : "39.61 Hectares"
                              
                         }
-  }
+  }]
 },
 {
-  "GMC Sierra":""{
+  "GMC Sierra": [{
                         "Plant_1" : {
                              "Name":"Baltimore Operations",
                              "Location":"White Marsh, Maryland, US",
@@ -294,7 +295,7 @@
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "264",
-                             "Size" : "471,000 sq. ft.",
+                             "Size" : "471,000 sq. ft."
                              
                         },
                         "Plant_2" : {
@@ -304,7 +305,7 @@
                              "Environment_Rating" : "5/10",
                              "Community_Involvement":"5/10",
                              "Num_Employees" : "2820",
-                             "Size" : "159 acres",
+                             "Size" : "159 acres"
                              
                         },
                         "Plant_3" : {
@@ -314,7 +315,7 @@
                              "Environment_Rating" : "6/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" : "3900",
-                             "Size" : "716 acres",
+                             "Size" : "716 acres"
                              
                         },
                         "Plant_4" : {
@@ -324,7 +325,7 @@
                              "Environment_Rating" : "/10",
                              "Community_Involvement":"/10",
                              "Num_Employees" : "2957",
-                             "Size" : "1.2 million square feet",
+                             "Size" : "1.2 million square feet"
                              
                         },
                         "Plant_5" : {
@@ -334,13 +335,13 @@
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"8/10",
                              "Num_Employees" : "2900",
-                             "Size" : "10 million square feet",
+                             "Size" : "10 million square feet"
                             
                         }
-  }
+  }]
 },
 {
-"Buick Enclave" : {
+"Buick Enclave" : [{
   
                         "Plant_1" : {
                              "Name":"Warren Transmission",
@@ -349,7 +350,7 @@
                              "Environment_Rating" : "7/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"581",
-                             "Size" : "2100000 sq feet",
+                             "Size" : "2100000 sq feet"
                           },
                         "Plant_2" : {
                              "Name":"Pontiac Metal Center",
@@ -358,7 +359,7 @@
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"7/10",
                              "Num_Employees" :"491",
-                             "Size" : "1250000 sq feet",
+                             "Size" : "1250000 sq feet"
                              
                           },
                         "Plant_3" : {
@@ -368,8 +369,8 @@
                              "Environment_Rating" : "7/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"3486",
-                             "Size" : "3.4 million sq. ft.",
-                             
+                             "Size" : "3.4 million sq. ft."
+
                           },
                           "Plant_4" : {
                              "Name":"SAIC General Motors Corporation Limited",
@@ -378,7 +379,7 @@
                              "Environment_Rating" : "5/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"",
-                             "Size" : "",
+                             "Size" : ""
                              
                           },
                         "Plant_5" : {
@@ -388,10 +389,10 @@
                              "Environment_Rating" : "6/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"3500",
-                             "Size" : " 4,900,000 sq. ft.",
+                             "Size" : " 4,900,000 sq. ft."
                              
                           }
                        
 
-}
+}]
 }]
