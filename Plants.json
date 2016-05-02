@@ -103,7 +103,7 @@
                         "Plant_5" : {
                              "Name":"Port Melbourne",
                              "Location":"Fishermans Bend, Victoria, South Australia",
-                             "LatLong":"",
+                             "LatLong":"-37.826,144.911",
                              "Environment_Rating" : "7/10",
                              "Community_Involvement" : "8/10",
                              "Num_Employees" :"1300",
