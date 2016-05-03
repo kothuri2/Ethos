@@ -1,5 +1,5 @@
 [{
-"Toyota Camry" : [{
+"Toyota Camry" : {
                       "Plant_1" : {
                              "Name":"Fuji Heavy Industries - SIA Assembly",
                              "Location":"Lafayette, IN, US",
@@ -51,9 +51,11 @@
                         "Size" : "618,000 m2"
                         }
                         
-}]},
+}
+},
+
 {
-"Chevrolot Corvette" : [{
+"Chevrolet Corvette" : {
                           "Plant_1" : {
                              "Name":"Bowling Green Assembly Plant",
                              "Location":"Bowling Green, Kentucky",
@@ -101,27 +103,25 @@
                         "Plant_5" : {
                              "Name":"Port Melbourne",
                              "Location":"Fishermans Bend, Victoria, South Australia",
-                             "LatLong":"-37.826,144.911",
-                             "Environment_Rating" : "7/10",
-                             "Community_Involvement" : "8/10",
+                             "LatLong":"",
+                             "Environment_Rating" : "",
                              "Num_Employees" :"1300",
                              "Size" : "",
-                             "info":"It will be closed by 2017",
-                             "Size" : "39.61 Hectares"
+                             "info":"It will be closed by 2017"
                         },
                         "Plant_6" : {
                              "Name":"Performance Build Center in Wixom",
                              "Location":"Wixom, Michigan, United States",
-                             "LatLong":"42.524,-83.536",
-                             "Environment_Rating":"5/10",
-                             "Community_Involvement" : "2/10",
+                             "LatLong":"",
+                             "Community_Involvement":"5/10",
+                             "Environment_Rating" : "2/10",
                              "Num_Employees" :"29",
                              "Size" : "100,000 sq. ft."
                         }
-}]
+}
 },
 {
-"Chevrolot Traverse" : {
+"Chevrolet Traverse" : {
   
                         "Plant_1" : {
                              "Name":"Spring Hill Manufacturing",
@@ -141,9 +141,8 @@
                              "Environment_Rating" : "8/10",
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"",
-                             "Size" : "",
-                             "Num_Employees" :"2400",
-                             "Size" : "202 Acres"
+                             "Size" : ""
+
                           },
                        "Plant_3" : {
                              "Name":"Delco Remy",
@@ -177,7 +176,7 @@
 }                       
 },
 {
-  "Cadillac ELR": [{
+  "Cadillac ELR":{
                         "Plant_1" : {
                              "Name":"Detroit-Hamtramck",
                              "Location":"Detroit, Michigan, US",
@@ -208,10 +207,10 @@
                              "Size" : "479,000 square feet"
                              
                         }
-  }]
+  }
 },
 {
-  "Cadillac CTS": [{
+  "Cadillac CTS":{
                         "Plant_1" : {
                              "Name":"Rochester Operations",
                              "Location":"Rochester, New York, US",
@@ -241,7 +240,7 @@
                              "Num_Employees" : "1780",
                              "Size" : "111 acres"
                         },
-                        "Plant_3" : {
+                        "Plant_4" : {
                              "Name":"Tonawanda Engine Plant",
                              "Location":"Buffalo, New York, US",
                              "LatLong":"42.962,-78.914",
@@ -250,10 +249,10 @@
                              "Num_Employees" : "1695",
                              "Size" : "111 acres"
                         }
-  }]
+  }
 },
 {
-  "Chevrolet Cruze": [{
+  "Chevrolet Cruze":{
                         "Plant_1" : {
                              "Name":"Lordstown Complex",
                              "Location":"Warren, Ohio, US",
@@ -284,10 +283,10 @@
                              "Size" : "39.61 Hectares"
                              
                         }
-  }]
+  }
 },
 {
-  "GMC Sierra": [{
+  "GMC Sierra":{
                         "Plant_1" : {
                              "Name":"Baltimore Operations",
                              "Location":"White Marsh, Maryland, US",
@@ -338,10 +337,10 @@
                              "Size" : "10 million square feet"
                             
                         }
-  }]
+  }
 },
 {
-"Buick Enclave" : [{
+"Buick Enclave" : {
   
                         "Plant_1" : {
                              "Name":"Warren Transmission",
@@ -370,7 +369,7 @@
                              "Community_Involvement":"2/10",
                              "Num_Employees" :"3486",
                              "Size" : "3.4 million sq. ft."
-
+                             
                           },
                           "Plant_4" : {
                              "Name":"SAIC General Motors Corporation Limited",
@@ -394,5 +393,5 @@
                           }
                        
 
-}]
+}
 }]
