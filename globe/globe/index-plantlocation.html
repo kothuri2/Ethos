@@ -17,7 +17,9 @@
             line-height: 20px;
             height: 100%;
         }
+
         #info {
+
             font-size: 11px;
             position: absolute;
             bottom: 5px;
@@ -25,28 +27,35 @@
             border-radius: 3px;
             right: 10px;
             padding: 10px;
+
         }
+
         #currentInfo {
             width: 100px;
             position: absolute;
             left: 20px;
             top: 63px;
+
             background-color: rgba(0,0,0,0.2);
-            border-top: 1px solid rgba(255,255,255,0.4);
+
+            /*border-top: 1px solid rgba(255,255,255,0.4);*/
             padding: 10px;
+
         }
+
         a {
             color: #aaa;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
-
         }
+
         .bull {
             padding: 0 5px;
             color: #555;
         }
+
         #title {
             position: absolute;
             top: 10px;
@@ -54,9 +63,11 @@
             left: 20px;
             background-color: rgba(0,0,0,0.2);
             border-radius: 3px;
-            font: 13px sans-serif;
+            font: 15px sans-serif;
             padding: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.4);
         }
+
         .year {
             font: 16px sans-serif;
             line-height: 26px;
@@ -65,31 +76,55 @@
             float: left;
             width: 90px;
             color: rgba(255, 255, 255, 0.4);
+
             cursor: pointer;
-            -webkit-transition: all 0.1s ease-out;
+            /*-webkit-transition: all 0.1s ease-out;*/
         }
+
         .year:hover, .year.active {
-            font-size: 23px;
+            font-size: 20px;
             color: #fff;
         }
+
+/*
         .year:hover .dropdown-content {
+            position:absolute;
+            resize:none;
             display: block;
+            !*left: 1000px;*!
+            top: 20px;
+            left: 100px;
+        }*/
+
+        .dropdown-content:target{
+            display:block;
         }
+
         .dropdown-content {
-            width:450px;
+            width:220px;
             height:300px;
+            resize: none;
+
             font-family: sans-serif;
             display: none;
             position: absolute;
+            left: 115px;
+            bottom:120px;
             background-color: #f9f9f9;
+
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
             color: black;
             padding: 12px 16px;
             text-decoration: none;
             font-size: 15px;
             text-align:left;
+
+            border-radius: 3px;
+
             overflow:auto;
         }
+
         #ce span {
             color:white;
             z-index:1;
@@ -97,7 +132,9 @@
             bottom:50px;
             position: absolute;
             font-size:24pt;
+
         }
+
         #ce {
             width: 120px;
             height: 132px;
@@ -107,6 +144,14 @@
             left: 10px;
             background: url(logo.gif);
         }
+
+        .close{
+
+            float:right;
+
+        }
+
+
     </style>
 </head>
 <body>
@@ -114,7 +159,7 @@
 <div id="container"></div>
 
 <div id="info">
-    <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Created by Ethos team <span class="bull">&bull;</span>
+    <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Created by Ethos team <span class="bull">&bull;</span> Data acquired from <a href="http://sedac.ciesin.columbia.edu/gpw/">SEDAC</a>
 </div>
 
 <a id="ce" href="https://github.com/kothuri2/Ethos">
@@ -122,27 +167,65 @@
 </a>
 
 <div id="currentInfo">
-    <div>
-    <span id="year1990" class="year"><p>Toyota Camry</p><div id="placeholder" class="dropdown-content"><b>Plant1</b><br>
+
+    <a href="#placeholder1"><span id="year1990" class="year"><p>Toyota Camry</p><div id="placeholder1" class="dropdown-content">
+        <a class="close" href="#" onclick="hide('placeholder1')">X</a>
+        <b>Plant1</b><br>
+
+        Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US<br>Environment_Rating: 9/10<br>
+        Community_Involvement: 7/10<br>Num_Employees: 2230<br>Size: 3,360,000m2
+        Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US<br>Environment_Rating: 9/10<br>
+        Community_Involvement: 7/10<br>Num_Employees: 2230<br>Size: 3,360,000m2
+        Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US<br>Environment_Rating: 9/10<br>
+        Community_Involvement: 7/10<br>Num_Employees: 2230<br>Size: 3,360,000m2
+        Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US<br>Environment_Rating: 9/10<br>
+        Community_Involvement: 7/10<br>Num_Employees: 2230<br>Size: 3,360,000m2
+
+    </div></span></a>
+
+
+    <a href="#placeholder2"><span id="year1995" class="year"><p>Chevrolot Corvette</p><div id="placeholder2" class="dropdown-content">
+        <a class="close" href="#" onclick="hide('placeholder2')">X</a>
+        <b>Plant12</b><br>
+
+        Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US<br>Environment_Rating: 9/10<br>
+        Community_Involvement: 7/10<br>Num_Employees: 2230<br>Size: 3,360,000m2
+        Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US<br>Environment_Rating: 9/10<br>
+        Community_Involvement: 7/10<br>Num_Employees: 2230<br>Size: 3,360,000m2
+        Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US<br>Environment_Rating: 9/10<br>
+        Community_Involvement: 7/10<br>Num_Employees: 2230<br>Size: 3,360,000m2
+        Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US<br>Environment_Rating: 9/10<br>
+        Community_Involvement: 7/10<br>Num_Employees: 2230<br>Size: 3,360,000m2
+
+    </div></span></a>
+
+    <a href="#placeholder3"><span id="year2000" class="year"><p>Chevrolot Traverse</p><div id="placeholder3" class="dropdown-content">
+
+        <a class="close" href="#" onclick="hide('placeholder3')">X</a>
+        something</div></span></a>
+
+
+    <a href="#placeholder4"><span id="year2005" class="year"><p>Cadillac ELR</p><div id="placeholder4"class="dropdown-content">
+
+
+        <a class="close" href="#" onclick="hide('placeholder4')">X</a>
+        <b>Plant1</b><br>
 
         Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US<br>Environment_Rating: 9/10<br>
         Community_Involvement: 7/10<br>Num_Employees: 2230<br>Size: 3,360,000m2
 
-    </div></span>
-        <span id="year1995" class="year"><p>Chevrolot Corvette</p><div class="dropdown-content">something</div></span>
-        <span id="year2000" class="year"><p>Chevrolot Traverse</p><div class="dropdown-content">something</div></span>
-    </div>
-    <div>
-    <span id="year2005" class="year"><p>Cadillac ELR</p><div class="dropdown-content"><b>Plant1</b><br>
 
-        Name: Fuji Heavy Industries - SIA Assembly<br>Location: Lafayette, IN, US<br>Environment_Rating: 9/10<br>
-        Community_Involvement: 7/10<br>Num_Employees: 2230<br>Size: 3,360,000m2
+    </div></span></a>
+    <a href="#placeholder5"><span id="year2010" class="year"><p>Cadillac CTS</p><div id="placeholder5" class="dropdown-content">
+
+        <a class="close" href="#" onclick="hide('placeholder5')">X</a>
+        something</div></span></a>
+    <a href="#placeholder6"><span id="year2015" class="year"><p>Chevrolet Cruze</p><div id="placeholder6" class="dropdown-content">
+
+        <a class="close" href="#" onclick="hide('placeholder6')">X</a>
+        something</div></span></a>
 
 
-    </div></span>
-        <span id="year2010" class="year"><p>Cadillac CTS</p><div class="dropdown-content">something</div></span>
-        <span id="year2015" class="year"><p>Chevrolet Cruze</p><div class="dropdown-content">something</div></span>
-    </div>
 </div>
 
 <div id="title">
@@ -155,14 +238,18 @@
 <script type="text/javascript" src="third-party/Tween.js"></script>
 <script type="text/javascript" src="globe.js"></script>
 <script type="text/javascript">
+
     if(!Detector.webgl){
         Detector.addGetWebGLMessage();
     } else {
+
         var years = ['1990','1995','2000','2005','2010','2015'];
         var container = document.getElementById('container');
         var globe = new DAT.Globe(container);
+
         console.log(globe);
         var i, tweens = [];
+
         var settime = function(globe, t) {
             return function() {
                 new TWEEN.Tween(globe).to({time: t/years.length},500).easing(TWEEN.Easing.Cubic.EaseOut).start();
@@ -177,12 +264,16 @@
                 y.setAttribute('class', 'year active');
             };
         };
+
         for(var i = 0; i<years.length; i++) {
             var y = document.getElementById('year'+years[i]);
             y.addEventListener('mouseover', settime(globe,i), false);
         }
+
         var xhr;
         TWEEN.start();
+
+
         xhr = new XMLHttpRequest();
         xhr.open('GET', 'plantlocation.json', true);
         xhr.onreadystatechange = function(e) {
@@ -201,16 +292,46 @@
             }
         };
         xhr.send(null);
+
+
     }
+
     /*
-     var xhReq = new XMLHttpRequest();
-     xhReq.open("GET", 'plantlocation.json', true);
-     xhReq.send(null);
-     var jsonObject = JSON.parse(xhReq.responseText);
-     document.getElementById("placeholder").innerHTML="Name: "+jsonObject[0]+"</br>"+"Name: " +jsonObject[0].Plant_2.Name;
-     */
+    var xhReq = new XMLHttpRequest();
+    xhReq.open("GET", 'plantlocation.json', true);
+    xhReq.send(null);
+    var jsonObject = JSON.parse(xhReq.responseText);
+
+    document.getElementById("placeholder").innerHTML="Name: "+jsonObject[0]+"</br>"+"Name: " +jsonObject[0].Plant_2.Name;
+    */
 </script>
 
+<script type="text/javascript">
+/*    $(currentInfo).ready(function () {
+        $('year').hover (function () {
+            $('dropdown-content').removeClass('hover');
+            $(this).addClass('hover');
+        });
+    })*/
+
+//    $(".show").click(function () {
+//        $('#placeholder').eq(0).show();
+//    });
+//
+//    $('.hide').click(function () {
+//        $('#dropdown-content').eq(0).hide();
+//    });
+
+
+</script>
+<script>
+    var something = document.getElementById('placeholder');
+    something.style.cursor = 'pointer';
+    something.onclick = function () {
+        this.style.backgroundColor = 'white';
+
+    };
+</script>
 </body>
 
 </html>
